@@ -1,0 +1,94 @@
+TEPPICHWERKSTATT ECKSTEIN — Dateien fuer den Webspace
+=====================================================
+
+HOCHLADEN
+---------
+Den gesamten Inhalt dieses Ordners in das Wurzelverzeichnis Ihres Webspace
+legen (meist "httpdocs", "public_html" oder "www"). Die Ordnerstruktur muss
+erhalten bleiben:
+
+  index.html
+  impressum.html
+  datenschutz.html
+  assets/css/style.css
+  assets/js/main.js
+  assets/img/...
+  assets/video/...
+
+Danach ist die Seite unter www.teppichwerkstatt.ch erreichbar. Es wird nichts
+installiert, keine Datenbank benoetigt und kein PHP ausgefuehrt - reine
+statische Dateien.
+
+
+VOR DEM LIVEGANG ZU ERGAENZEN
+-----------------------------
+1. impressum.html
+   - Rechtsform der Firma
+   - UID (CHE-000.000.000)
+   - MWST-Nummer
+   - Handelsregistereintrag
+
+2. datenschutz.html, Ziffer 7
+   - Name, Sitz und Serverstandort des Hostingdienstleisters
+
+3. Telefonnummern pruefen
+   0732 ist die Vorwahl von Linz, 0660 ein oesterreichisches Mobilnetz,
+   die Anschrift liegt aber in Zuerich. Entweder gehoert die Landesvorwahl
+   davor (+43 732 ...) oder es braucht Schweizer Nummern. Die Nummern stehen
+   in index.html, impressum.html und datenschutz.html.
+
+4. Kontaktformular
+   Im Auslieferungszustand oeffnet es das Mailprogramm des Besuchers. Sobald
+   ein Formularempfaenger eingerichtet ist, in index.html beim Formular
+   ergaenzen:
+       action="https://ihr-endpunkt.example/abholung" data-endpoint="1"
+
+
+EMPFOHLENE SERVEREINSTELLUNGEN
+------------------------------
+HTTPS erzwingen. Die Seite laedt Schriften ueber https, bei gemischtem
+Inhalt blockieren Browser diese sonst.
+
+Komprimierung fuer Text einschalten (gzip oder brotli) fuer .html, .css,
+.js und .svg. Das Video ist bereits komprimiert und braucht das nicht.
+
+Zwischenspeicherung: fuer alles unter assets/ eine lange Haltbarkeit setzen
+(z. B. ein Jahr), fuer die HTML-Dateien eine kurze. Beispiel fuer Apache in
+einer .htaccess:
+
+    <IfModule mod_expires.c>
+      ExpiresActive On
+      ExpiresByType text/css              "access plus 1 year"
+      ExpiresByType application/javascript "access plus 1 year"
+      ExpiresByType image/svg+xml         "access plus 1 year"
+      ExpiresByType image/jpeg            "access plus 1 year"
+      ExpiresByType image/png             "access plus 1 year"
+      ExpiresByType video/mp4             "access plus 1 year"
+      ExpiresByType text/html             "access plus 10 minutes"
+    </IfModule>
+
+Wichtig: Wenn Sie spaeter eine Datei unter assets/ austauschen, muss sie
+einen neuen Namen bekommen (z. B. style-2.css) oder die Haltbarkeit kurz
+gesetzt werden - sonst sehen wiederkehrende Besucher die alte Fassung.
+
+Das Video wird beim Scrollen durchgespult. Damit das fluessig laeuft, muss
+der Server Bereichsanfragen unterstuetzen (Accept-Ranges). Das tun alle
+gaengigen Webserver von Haus aus; falls das Bild ruckelt, ist das der erste
+Punkt zum Pruefen.
+
+
+DATENSCHUTZ: SCHRIFTEN
+----------------------
+Die Schriften Merriweather und Archivo werden derzeit von Google geladen.
+Dabei wird die IP-Adresse der Besucher an Google uebertragen - offengelegt
+in datenschutz.html, Ziffer 6. Fuer die Schweiz empfiehlt sich, die
+Schriften selbst auszuliefern. Dann entfaellt die Uebertragung und Ziffer 6
+kann gestrichen werden. Die Anleitung dazu steht in der README.md.
+
+
+BILDER
+------
+hero-poster.jpg und die Videos stammen aus Ihrem Material.
+teppich-vorher.jpg und teppich-nachher.jpg sind noch Platzhalter. Der
+Vorher-Nachher-Vergleich lebt von echten Aufnahmen desselben Stuecks aus
+gleicher Perspektive - Stativ, gleiche Position, gleiches Licht.
