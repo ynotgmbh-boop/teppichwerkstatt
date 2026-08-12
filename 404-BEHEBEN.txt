@@ -1,0 +1,93 @@
+NETLIFY ZEIGT 404 - SO BEHEBEN
+==============================
+
+URSACHE
+-------
+Netlify liefert die Startseite aus dem "Publish-Verzeichnis" aus.
+Voreingestellt ist die Wurzel des Repositorys. Liegt die index.html dort
+nicht, sondern in einem Unterordner, findet Netlify nichts und meldet 404.
+
+
+ZUERST PRUEFEN
+--------------
+Oeffnen Sie Ihr Repository auf GitHub. Was sehen Sie in der obersten
+Dateiliste, ohne in einen Ordner zu klicken?
+
+  Fall A: index.html, impressum.html, datenschutz.html, assets
+          -> Die Dateien liegen richtig. Weiter bei Loesung 2.
+
+  Fall B: ein einzelner Ordner, z. B. "teppichwerkstatt"
+          -> Das ist die Ursache. Weiter bei Loesung 1.
+
+  Fall C: ein Ordner "teppichwerkstatt-webspace", darin nochmal
+          "teppichwerkstatt"
+          -> Doppelt verschachtelt. Ebenfalls Loesung 1, aber den
+             vollstaendigen Pfad angeben: teppichwerkstatt-webspace/teppichwerkstatt
+
+
+LOESUNG 1 - Publish-Verzeichnis setzen (kein Umsortieren noetig)
+---------------------------------------------------------------
+Variante a, ueber die Oberflaeche:
+  Netlify oeffnen -> Site configuration -> Build & deploy
+  -> Build settings -> Publish directory
+  Dort den Ordnernamen eintragen, z. B.:  teppichwerkstatt
+  Speichern, dann "Deploys" -> "Trigger deploy" -> "Deploy site".
+
+Variante b, ueber eine Datei im Repo:
+  Die beiliegende netlify-WENN-UNTERORDNER.toml in die WURZEL des
+  Repositorys legen und in netlify.toml umbenennen. Den Ordnernamen darin
+  anpassen, falls er anders lautet. Committen - Netlify baut selbsttaetig neu.
+
+
+LOESUNG 2 - Dateien in die Wurzel verschieben (sauberer)
+--------------------------------------------------------
+Im Repository so umsortieren, dass die oberste Ebene so aussieht:
+
+  index.html
+  impressum.html
+  datenschutz.html
+  assets/
+
+Der umschliessende Ordner faellt weg. Danach greift die Voreinstellung und
+es braucht keine weitere Konfiguration.
+
+Ueber die GitHub-Oberflaeche geht das Verschieben nur Datei fuer Datei.
+Schneller ueber die Kommandozeile, im Repo-Ordner:
+
+    git mv teppichwerkstatt/* .
+    rmdir teppichwerkstatt
+    git commit -m "Dateien in die Wurzel verschoben"
+    git push
+
+
+BUILD COMMAND
+-------------
+Das Feld "Build command" muss LEER sein. Die Seite ist statisch, es wird
+nichts gebaut. Steht dort etwas wie "npm run build", schlaegt der Vorgang
+fehl oder erzeugt ein leeres Verzeichnis.
+
+
+DATEI _headers
+--------------
+Die beiliegende _headers regelt die Zwischenspeicherung. Sie gehoert NEBEN
+die index.html, also in dasselbe Verzeichnis - bei Loesung 1 in den
+Unterordner, bei Loesung 2 in die Wurzel.
+
+Hinweis: Die .htaccess-Beispiele in HOCHLADEN.txt gelten nur fuer
+Apache-Server. Netlify ignoriert sie. Fuer Netlify ist _headers zustaendig.
+
+
+NACH DEM ERFOLGREICHEN DEPLOY PRUEFEN
+-------------------------------------
+1. Startseite laedt mit Bild und Farben
+   Bleibt sie schwarz-weiss ohne Gestaltung, wurde der Ordner assets/
+   nicht mitgeladen.
+
+2. Das Hero-Video laeuft beim Scrollen
+   Ruckelt es stark, pruefen Sie im Browser unter "Netzwerk", ob
+   hero.mp4 mit Status 206 ausgeliefert wird. 206 bedeutet, dass
+   Bereichsanfragen funktionieren - das braucht das Durchspulen.
+
+3. Die Schweizer Karte erscheint im Abschnitt "Einsatzgebiet"
+
+4. Impressum und Datenschutz sind ueber die Fusszeile erreichbar

@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teppichwerkstatt Eckstein Zürich — Handwäsche, Reparatur, Restauration</title>
+<meta name="description" content="Teppichwerkstatt Eckstein an der Dufourstrasse 49 in Zürich: Teppichwäsche, Reparatur, Restauration, An- und Verkauf. Kostenlose Beratung und Hausbesuche nach Vereinbarung.">
+<meta name="theme-color" content="#0A0A09">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_CH">
+<meta property="og:site_name" content="Teppichwerkstatt Eckstein">
+<meta property="og:title" content="Teppichwerkstatt Eckstein — Handwäsche, Restauration, Abholservice">
+<meta property="og:description" content="Tradition, Handwerk, Werterhalt — seit Generationen in besten Händen. Dufourstrasse 49, 8008 Zürich.">
+<meta property="og:image" content="assets/img/hero-poster.jpg">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<noscript><style>
+  /* Ohne JavaScript wird die Bühne gestapelt statt überblendet,
+     und alles, was auf das Enthüllen wartet, ist sofort sichtbar. */
+  .stage { height: auto; }
+  .stage__pin { position: relative; height: auto; display: grid; grid-template-rows: 100svh auto; }
+  .stage__film { grid-row: 1; grid-column: 1; }
+  .hero { grid-row: 1; grid-column: 1; align-content: end; }
+  .stage__veil { display: none; }
+  .rv, .rv-wipe { opacity: 1; translate: none; clip-path: none; }
+  .rv-line > * { translate: none; }
+  .hero__svc li { opacity: 1; translate: none; }
+  .flow__spine i { transform: scaleY(1); }
+  .spool, .burger { display: none; }
+</style></noscript>
+</head>
+
+<body>
+<a class="skip" href="#handwerk">Zum Inhalt springen</a>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ====================================================== Kopfzeile ==== -->
+<header class="head">
+  <a class="head__brand" href="#start" aria-label="Teppichwerkstatt Eckstein, zum Seitenanfang">
+    <span class="mark head__mark" aria-hidden="true"></span>
+    <span class="head__word">Teppichwerkstatt<span>Eckstein</span></span>
+  </a>
+
+  <nav class="nav" aria-label="Abschnitte">
+    <a class="nav__link" data-anchor href="#handwerk">Handwerk</a>
+    <a class="nav__link" data-anchor href="#leistungen">Leistungen</a>
+    <a class="nav__link" data-anchor href="#ablauf">Ablauf</a>
+    <a class="nav__link" data-anchor href="#arbeiten">Arbeiten</a>
+    <a class="nav__link" data-anchor href="#preise">Preise</a>
+    <a class="nav__link" data-anchor href="#gebiet">Gebiet</a>
+  </nav>
+
+  <div class="head__cta">
+    <a class="btn" href="#kontakt">Abholung anfragen</a>
+  </div>
+
+  <button class="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menü öffnen">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ====================================================== Überblendmenü == -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <nav aria-label="Menü">
+    <a class="drawer__link" href="#handwerk"><i>01</i>Handwerk</a>
+    <a class="drawer__link" href="#leistungen"><i>02</i>Leistungen</a>
+    <a class="drawer__link" href="#ablauf"><i>03</i>Ablauf</a>
+    <a class="drawer__link" href="#arbeiten"><i>04</i>Arbeiten</a>
+    <a class="drawer__link" href="#preise"><i>05</i>Preise</a>
+    <a class="drawer__link" href="#gebiet"><i>06</i>Gebiet</a>
+    <a class="drawer__link" href="#kontakt"><i>07</i>Kontakt</a>
+  </nav>
+  <div class="drawer__foot">
+    <a href="tel:0732220320">0732 220 320</a>
+    <a href="tel:06607280306">0660 728 03 06</a>
+    <a href="mailto:info@teppichwerkstatt.ch">info@teppichwerkstatt.ch</a>
+  </div>
+</div>
+
+<!-- ====================================================== Fortschritt ==== -->
+<div class="spool" aria-hidden="true">
+  <span class="mark spool__mark"></span>
+  <span class="spool__bar"><i></i></span>
+  <span class="spool__num">00</span>
+</div>
+
+<main>
+
+<!-- ============================================================ Bühne ==== -->
+<!-- Der Film weicht einer Elfenbeintafel: das Dunkle hebt sich ab,
+     darunter kommt die Farbe zum Vorschein. -->
+<div class="stage" id="start" data-theme="dark">
+  <div class="stage__pin">
+
+    <div class="stage__film">
+      <img class="stage__poster" src="assets/img/hero-poster.jpg" alt="">
+      <!-- Kein Autoplay: das Bild wird vom Scrollweg durchgespult (siehe stageJob). -->
+      <video id="herofilm" poster="assets/img/hero-poster.jpg" muted playsinline preload="auto">
+        <source src="assets/video/hero.mp4" type="video/mp4">
+      </video>
+      <script>
+        /* Auf schmalen Sichten und im Datensparmodus die leichte Fassung laden.
+           Steht direkt hinter dem Element, damit der Wechsel früh greift. */
+        (function () {
+          var v = document.getElementById('herofilm');
+          if (!v) return;
+          var slim = window.matchMedia('(max-width: 760px)').matches ||
+                     (navigator.connection && navigator.connection.saveData);
+          if (!slim) return;
+          v.querySelector('source').src = 'assets/video/hero-sm.mp4';
+          v.load();
+        })();
+      </script>
+      <div class="stage__scrim"></div>
+    </div>
+
+    <div class="stage__veil" aria-hidden="true">
+      <span class="veil__cloud veil__cloud--1"></span>
+      <span class="veil__cloud veil__cloud--2"></span>
+      <span class="veil__cloud veil__cloud--3"></span>
+      <span class="veil__solid"></span>
+    </div>
+
+    <div class="hero">
+      <div class="hero__main">
+        <p class="hero__kicker">Tradition · Handwerk · Werterhalt</p>
+        <h1 class="hero__title">
+          <span class="ln"><span>Die Zeit,</span></span>
+          <span class="ln"><span>die ein Teppich</span></span>
+          <span class="ln"><span><em>verdient</em>.</span></span>
+        </h1>
+        <div class="hero__foot">
+          <a class="btn btn--flame" href="#kontakt">
+            Abholung anfragen
+            <svg class="btn__arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+              <path d="M9 1l4 4-4 4M13 5H0" stroke="currentColor" stroke-width="1.3"/>
+            </svg>
+          </a>
+          <p class="hero__meta">
+            <span><b>Handwäsche</b> ohne Chemie</span>
+            <span><b>10–14</b> Tage</span>
+            <span><b>Abholung</b> in Zürich</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="hero__aside">
+        <!-- Treten beim Scrollen nacheinander hervor, gesteuert in stageJob -->
+        <ul class="hero__svc" data-svc>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.8 12.4h10.4v3.1a2.5 2.5 0 0 1-2.5 2.5H9.3a2.5 2.5 0 0 1-2.5-2.5v-3.1Z"/><path d="M9.1 12.4V9a1.8 1.8 0 0 1 1.8-1.8h2.2A1.8 1.8 0 0 1 14.9 9v3.4"/><path d="M2.6 21c1.8-1.3 3.6-1.3 5.4 0s3.6 1.3 5.4 0 3.6-1.3 5.4 0"/><path d="M19.6 3.2s-1.8 2.2-1.8 3.3a1.8 1.8 0 0 0 3.6 0c0-1.1-1.8-3.3-1.8-3.3Z"/></svg><div><b>Teppichwäsche</b><span>Reine Handwäsche, pflanzliche Seife</span></div></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 3.2 12.4 11.6"/><path d="M18.3 2.9a2.3 2.3 0 0 1 2.6 2.6"/><path d="M12.4 11.6c-2.7 1.3-4.6 2.9-5 5"/><circle cx="6.5" cy="19" r="1.7"/></svg><div><b>Teppichreparatur</b><span>Fransen, Kanten, Risse, Brandlöcher</span></div></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 3.4v17.2M19.4 3.4v17.2"/><path d="M4.6 7.6h14.8M4.6 12h14.8M4.6 16.4h14.8"/><circle cx="9.4" cy="12" r="1.3"/><circle cx="14.4" cy="7.6" r="1.3"/></svg><div><b>Teppichrestauration</b><span>Fehlstellen neu geknüpft, Knoten für Knoten</span></div></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.6 2.9H20a1.1 1.1 0 0 1 1.1 1.1v8.4a1.6 1.6 0 0 1-.47 1.13l-7.4 7.4a1.6 1.6 0 0 1-2.26 0l-7.5-7.5a1.6 1.6 0 0 1 0-2.26l7.4-7.4A1.6 1.6 0 0 1 11.6 2.9Z"/><circle cx="16.6" cy="7.4" r="1.5"/></svg><div><b>An- und Verkauf</b><span>Ankauf, Schätzung, ausgesuchte Stücke</span></div></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 14.2a1.9 1.9 0 0 1-1.9 1.9H8.2L4.4 19.9a.6.6 0 0 1-1-.45V5.7a1.9 1.9 0 0 1 1.9-1.9h13.4a1.9 1.9 0 0 1 1.9 1.9Z"/><path d="M8 8.6h8M8 12h5.4"/></svg><div><b>Kostenlose Beratung</b><span>Bei Ihnen zu Hause, ohne Wegzeit</span></div></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 10.2 12 3.4l8.4 6.8"/><path d="M5.6 11.8v8.8h12.8v-8.8"/><circle cx="12" cy="16.4" r="2.4"/><path d="M12 16.4a1.1 1.1 0 1 1 1.1-1.1"/></svg><div><b>Hausbesuche</b><span>Nach Vereinbarung, inklusive Abholung</span></div></li>
+        </ul>
+      </div>
+
+      <p class="hero__scroll"><i></i>Scrollen</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ========================================================= Handwerk ==== -->
+<section class="bay bay--light" id="handwerk" data-theme="light">
+  <div class="shell">
+
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Das Handwerk</p>
+        <h2 class="bay__title rv" style="--d:.08s">Seit Generationen in <em>besten Händen</em>.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Ein handgeknüpfter Teppich ist über Monate entstanden. Er verträgt keine
+        Maschine, die ihn in vierzig Minuten durchspült. Bei uns liegt er flach,
+        wird von Hand gewaschen und bekommt so lange Zeit, wie er braucht.
+      </p>
+    </div>
+
+    <div class="duo">
+      <div>
+        <p class="rv" style="max-width:52ch">
+          Wir folgen der persischen Werkstatttradition: erst der Staub, dann das
+          Wasser, dann die Faser. Gewaschen wird mit pflanzlichen, biologisch
+          abbaubaren Seifen — kein Chlor, keine Lösungsmittel, keine Bleiche.
+          Anschliessend führen wir der Wolle mit Lanolin das Fett zurück, das ihr
+          die Wäsche entzogen hat. Das ist der Schritt, den fast alle auslassen,
+          und der darüber entscheidet, wie der Teppich in zehn Jahren aussieht.
+        </p>
+
+        <ul class="creed rv" style="--d:.1s">
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.8 12.4h10.4v3.1a2.5 2.5 0 0 1-2.5 2.5H9.3a2.5 2.5 0 0 1-2.5-2.5v-3.1Z"/><path d="M9.1 12.4V9a1.8 1.8 0 0 1 1.8-1.8h2.2A1.8 1.8 0 0 1 14.9 9v3.4"/><path d="M2.6 21c1.8-1.3 3.6-1.3 5.4 0s3.6 1.3 5.4 0 3.6-1.3 5.4 0"/><path d="M19.6 3.2s-1.8 2.2-1.8 3.3a1.8 1.8 0 0 0 3.6 0c0-1.1-1.8-3.3-1.8-3.3Z"/></svg>Reine Handwäsche, flach liegend</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 3.4v17.2M19.4 3.4v17.2"/><path d="M4.6 7.6h14.8M4.6 12h14.8M4.6 16.4h14.8"/><circle cx="9.4" cy="12" r="1.3"/><circle cx="14.4" cy="7.6" r="1.3"/></svg>Traditionelle persische Technik</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 3.6c0 9.2-5.6 13.8-11.1 13.8-2 0-3.5-.6-3.5-.6S4.6 8.2 12.8 5.2c3.7-1.3 7.6-1.6 7.6-1.6Z"/><path d="M16.8 7.2 5.2 20.4"/></svg>Pflanzliche, biologisch abbaubare Seifen</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4s-5.3 6.1-5.3 9.7a5.3 5.3 0 0 0 10.6 0C17.3 9.5 12 3.4 12 3.4Z"/><path d="M4.4 20.6 20 4.4"/></svg>Kein Chlor, keine Lösungsmittel</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4s-5.3 6.1-5.3 9.7a5.3 5.3 0 0 0 10.6 0C17.3 9.5 12 3.4 12 3.4Z"/><path d="M9.5 14.2a2.7 2.7 0 0 0 2.7 2.7"/></svg>Rückfettung mit Woll-Lanolin</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 3.2 12.4 11.6"/><path d="M18.3 2.9a2.3 2.3 0 0 1 2.6 2.6"/><path d="M12.4 11.6c-2.7 1.3-4.6 2.9-5 5"/><circle cx="6.5" cy="19" r="1.7"/></svg>Reparatur Knoten für Knoten, von Hand</li>
+        </ul>
+
+        <div class="facts rv" style="--d:.18s">
+          <div><b>10–14</b><span>Tage bis zur Rückgabe</span></div>
+          <div><b>100 %</b><span>Handwäsche</span></div>
+          <div><b>0 %</b><span>Chlor und Bleiche</span></div>
+        </div>
+      </div>
+
+      <figure class="rv-wipe" style="margin:0; overflow:hidden">
+        <img data-par="0.16" src="assets/img/handwerk-sw.jpg"
+             alt="Die Hand eines Knüpfers führt einen Faden durch die Bordüre eines Orientteppichs."
+             width="1500" height="1000" loading="lazy" decoding="async">
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================================== Laufband ==== -->
+<div class="ticker" data-theme="dark" aria-hidden="true">
+  <!-- Zwei identische Sätze: die Schleife springt beim Wechsel unsichtbar zurück. -->
+  <div class="ticker__row">
+    <span>Handwäsche</span><span>Restauration</span><span>Rückfettung</span>
+    <span>Mottenschutz</span><span>Fransenservice</span><span>Abholung</span>
+    <span>Zustandsprotokoll</span><span>Klimaraum</span><span>Knotendichte</span>
+    <span>Woll-Lanolin</span><span>Kantensicherung</span><span>Leihteppich</span>
+    <span>Handwäsche</span><span>Restauration</span><span>Rückfettung</span>
+    <span>Mottenschutz</span><span>Fransenservice</span><span>Abholung</span>
+    <span>Zustandsprotokoll</span><span>Klimaraum</span><span>Knotendichte</span>
+    <span>Woll-Lanolin</span><span>Kantensicherung</span><span>Leihteppich</span>
+  </div>
+</div>
+
+<!-- ======================================================= Leistungen ==== -->
+<section class="bay bay--dark" id="leistungen" data-theme="dark">
+  <div class="shell">
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Leistungen</p>
+        <h2 class="bay__title rv" style="--d:.08s">Sechs Arbeiten, <em>eine</em> Werkstatt.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Alles läuft unter einem Dach — vom Zustandsprotokoll bis zum Ausrollen
+        bei Ihnen zu Hause. Ihr Teppich wird nicht weitergereicht.
+      </p>
+    </div>
+
+    <div class="craft">
+      <article class="craft__item">
+        <svg class="ico craft__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.8 12.4h10.4v3.1a2.5 2.5 0 0 1-2.5 2.5H9.3a2.5 2.5 0 0 1-2.5-2.5v-3.1Z"/><path d="M9.1 12.4V9a1.8 1.8 0 0 1 1.8-1.8h2.2A1.8 1.8 0 0 1 14.9 9v3.4"/><path d="M2.6 21c1.8-1.3 3.6-1.3 5.4 0s3.6 1.3 5.4 0 3.6-1.3 5.4 0"/><path d="M19.6 3.2s-1.8 2.2-1.8 3.3a1.8 1.8 0 0 0 3.6 0c0-1.1-1.8-3.3-1.8-3.3Z"/></svg>
+        <h3 class="craft__name">Teppichwäsche</h3>
+        <p class="craft__text">
+          Klopfen bis kein Sand mehr fällt, danach die Handwäsche mit pflanzlicher Seife. Trocknung hängend im Klimaraum, nicht an der Sonne.
+        </p>
+        <p class="craft__tags"><span>Handwäsche</span><span>Mottenschutz</span><span>Spannen</span></p>
+      </article>
+
+      <article class="craft__item">
+        <svg class="ico craft__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 3.2 12.4 11.6"/><path d="M18.3 2.9a2.3 2.3 0 0 1 2.6 2.6"/><path d="M12.4 11.6c-2.7 1.3-4.6 2.9-5 5"/><circle cx="6.5" cy="19" r="1.7"/></svg>
+        <h3 class="craft__name">Teppichreparatur</h3>
+        <p class="craft__text">
+          Fransen und Kanten erneuern wir, bevor der Flor Schaden nimmt. Risse, Brandlöcher und Wasserschäden ebenso — von Hand, nicht geklebt.
+        </p>
+        <p class="craft__tags"><span>Fransen</span><span>Kanten</span><span>Brandlöcher</span></p>
+      </article>
+
+      <article class="craft__item">
+        <svg class="ico craft__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 11.2V8.4a2.2 2.2 0 0 1 2.2-2.2h7.6A2.2 2.2 0 0 1 18 8.4v2.8"/><path d="M4.2 11.4a1.9 1.9 0 0 1 1.9 1.9v2.3h11.8v-2.3a1.9 1.9 0 1 1 3.8 0v4.4H2.3v-4.4a1.9 1.9 0 0 1 1.9-1.9Z"/><path d="M4.8 17.8v2M19.2 17.8v2"/></svg>
+        <h3 class="craft__name">Teppichrestauration</h3>
+        <p class="craft__text">
+          Fehlstellen knüpfen wir nach — abgestimmt auf Farbe, Material, Florhöhe und Knotendichte des Originals. Auch für Sammlerstücke.
+        </p>
+        <p class="craft__tags"><span>Neuknüpfung</span><span>Farbabgleich</span><span>Gutachten</span></p>
+      </article>
+
+      <article class="craft__item">
+        <svg class="ico craft__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.6 2.9H20a1.1 1.1 0 0 1 1.1 1.1v8.4a1.6 1.6 0 0 1-.47 1.13l-7.4 7.4a1.6 1.6 0 0 1-2.26 0l-7.5-7.5a1.6 1.6 0 0 1 0-2.26l7.4-7.4A1.6 1.6 0 0 1 11.6 2.9Z"/><circle cx="16.6" cy="7.4" r="1.5"/></svg>
+        <h3 class="craft__name">An- und Verkauf</h3>
+        <p class="craft__text">
+          Wir kaufen antike und moderne Stücke an, bereiten sie auf und geben sie weiter. Eine Schätzung erhalten Sie unverbindlich.
+        </p>
+        <p class="craft__tags"><span>Ankauf</span><span>Schätzung</span><span>Kommission</span></p>
+      </article>
+
+      <article class="craft__item">
+        <svg class="ico craft__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 14.2a1.9 1.9 0 0 1-1.9 1.9H8.2L4.4 19.9a.6.6 0 0 1-1-.45V5.7a1.9 1.9 0 0 1 1.9-1.9h13.4a1.9 1.9 0 0 1 1.9 1.9Z"/><path d="M8 8.6h8M8 12h5.4"/></svg>
+        <h3 class="craft__name">Kostenlose Beratung</h3>
+        <p class="craft__text">
+          Wir kommen zu Ihnen und sehen uns das Stück an Ort und Stelle an.
+          Wegzeiten berechnen wir nicht — auch dann nicht, wenn daraus kein
+          Auftrag wird.
+        </p>
+        <p class="craft__tags"><span>Ohne Wegzeit</span><span>Unverbindlich</span><span>Vor Ort</span></p>
+      </article>
+
+      <article class="craft__item">
+        <svg class="ico craft__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.6 16.4V8.4a1 1 0 0 1 1-1h8.8v9"/><path d="M12.4 10.6h3.5l3.5 3.4v2.4"/><path d="M2.6 16.4h1.4M9 16.4h4.2M19.4 16.4h2"/><circle cx="6.5" cy="17.8" r="1.9"/><circle cx="16.4" cy="17.8" r="1.9"/></svg>
+        <h3 class="craft__name">Hausbesuche & Abholung</h3>
+        <p class="craft__text">
+          Nach Vereinbarung kommen wir zu Ihnen, rollen ein, protokollieren und bringen den Teppich zurück an seinen Platz. In Zürich ohne Aufpreis.
+        </p>
+        <p class="craft__tags"><span>Nach Termin</span><span>Kostenlos</span><span>Leihteppich</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================== Ablauf ==== -->
+<section class="bay bay--light" id="ablauf" data-theme="light">
+  <div class="shell">
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Ablauf</p>
+        <h2 class="bay__title rv" style="--d:.08s">Acht Schritte, <em>keine</em> Abkürzung.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Jeder Teppich durchläuft dieselbe Reihenfolge. Was sich unterscheidet,
+        ist die Zeit, die einzelne Schritte brauchen.
+      </p>
+    </div>
+
+    <div class="flow">
+      <div class="flow__spine" aria-hidden="true"><i></i></div>
+
+      <div class="flow__step">
+        <p class="flow__no">01</p>
+        <h3 class="flow__name">Anfrage</h3>
+        <p class="flow__text">Anruf, Nachricht oder Formular. Wir klären Material, Grösse und was Sie stört.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">02</p>
+        <h3 class="flow__name">Abholung</h3>
+        <p class="flow__text">Wir kommen zum vereinbarten Termin, rollen ein und nehmen den Teppich mit.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">03</p>
+        <h3 class="flow__name">Zustandsprotokoll</h3>
+        <p class="flow__text">Material, Knotendichte, Farbechtheit, Schäden. Alles fotografiert, bevor Wasser fliesst.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">04</p>
+        <h3 class="flow__name">Staubentzug</h3>
+        <p class="flow__text">Geklopft wird so lange, bis nichts mehr herausfällt. Trockener Schmutz muss raus, bevor er nass wird.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">05</p>
+        <h3 class="flow__name">Handwäsche</h3>
+        <p class="flow__text">Flach liegend, mit Bürste und pflanzlicher Seife. In der Signature-Wäsche in drei Durchgängen.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">06</p>
+        <h3 class="flow__name">Rückfettung</h3>
+        <p class="flow__text">Woll-Lanolin ersetzt das ausgewaschene Fett und legt sich als natürlicher Schutz um die Faser.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">07</p>
+        <h3 class="flow__name">Trocknung &amp; Reparatur</h3>
+        <p class="flow__text">Trocknen im Klimaraum, dann Spannen. Falls nötig, knüpfen wir Fehlstellen von Hand nach.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">08</p>
+        <h3 class="flow__name">Zustellung</h3>
+        <p class="flow__text">Zurück an seinen Platz, ausgerollt und ausgerichtet. Das Protokoll bekommen Sie dazu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= Arbeiten ==== -->
+<section class="bay bay--dark" id="arbeiten" data-theme="dark">
+  <div class="shell">
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Arbeiten</p>
+        <h2 class="bay__title rv" style="--d:.08s">Vorher, <em>nachher</em>.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Von der Ecke war nur noch die Grundkette übrig — Bordüre und Fransen
+        fehlten auf ganzer Breite. Erst gewaschen, dann Knoten für Knoten neu
+        geknüpft, abgestimmt auf Farbe, Material und Dichte des Originals.
+      </p>
+    </div>
+
+    <div class="rv-wipe">
+      <div class="ba" data-ba>
+        <img class="ba__after" src="assets/img/teppich-nachher.jpg"
+             alt="Dieselbe Ecke nach der Restauration: Bordüre und Fransen vollständig wieder aufgebaut."
+             width="1400" height="933" loading="lazy" decoding="async">
+        <div class="ba__before">
+          <img src="assets/img/teppich-vorher.jpg"
+               alt="Dieselbe Ecke vor der Arbeit: die Bordüre fehlt, die Grundkette liegt frei."
+               width="1400" height="933" loading="lazy" decoding="async">
+        </div>
+
+        <span class="ba__tag ba__tag--a">Vorher</span>
+        <span class="ba__tag ba__tag--b">Nachher</span>
+
+        <div class="ba__bar" aria-hidden="true">
+          <span class="ba__grip">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l-6 7 6 7v-4h6v4l6-7-6-7v4H9z"/></svg>
+          </span>
+        </div>
+
+        <input class="ba__range" type="range" min="0" max="100" value="50" step="0.1"
+               aria-label="Vergleich zwischen vorher und nachher verschieben">
+      </div>
+    </div>
+    <p class="ba-note rv">Ziehen Sie den Regler — oder nutzen Sie die Pfeiltasten</p>
+  </div>
+</section>
+
+<!-- =========================================================== Preise ==== -->
+<section class="bay bay--light" id="preise" data-theme="light">
+  <div class="shell">
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Preise</p>
+        <h2 class="bay__title rv" style="--d:.08s">Was es kostet, es <em>richtig</em> zu machen.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Abholung, Protokoll und Zustellung sind immer enthalten. Den verbindlichen
+        Preis nennen wir nach der Begutachtung — vorher wird nichts berechnet.
+      </p>
+    </div>
+
+    <div class="tariff">
+      <article class="tariff__card rv">
+        <h3 class="tariff__name">Wäsche</h3>
+        <p class="tariff__price">ab CHF 120<small>pro m²</small></p>
+        <ul class="tariff__list">
+          <li>Zustandsprotokoll mit Fotos</li>
+          <li>Klopfen und Staubentzug</li>
+          <li>Handwäsche, pflanzliche Seife</li>
+          <li>Mottenschutz</li>
+          <li>Trocknung im Klimaraum, Spannen</li>
+          <li>Abholung und Zustellung</li>
+        </ul>
+        <a class="btn btn--ink" href="#kontakt">Anfragen</a>
+      </article>
+
+      <article class="tariff__card tariff__card--lead rv" style="--d:.08s">
+        <span class="tariff__flag">Empfohlen</span>
+        <h3 class="tariff__name">Signature</h3>
+        <p class="tariff__price">ab CHF 165<small>pro m²</small></p>
+        <ul class="tariff__list">
+          <li>Alles aus der Wäsche</li>
+          <li>Dreistufige Wäsche</li>
+          <li>Händische Rückfettung mit Woll-Lanolin</li>
+          <li>Fransenservice</li>
+          <li>Kantensicherung</li>
+          <li>Leihteppich auf Wunsch</li>
+        </ul>
+        <a class="btn" href="#kontakt">Anfragen</a>
+      </article>
+
+      <article class="tariff__card rv" style="--d:.16s">
+        <h3 class="tariff__name">Restauration</h3>
+        <p class="tariff__price">Nach Aufwand<small>Offerte nach Begutachtung</small></p>
+        <ul class="tariff__list">
+          <li>Neuknüpfung von Fehlstellen</li>
+          <li>Wiederaufbau der Grundkette</li>
+          <li>Kanten, Fransen, Risse, Brandlöcher</li>
+          <li>Farbabgleich nach Original</li>
+          <li>Gutachten für die Versicherung</li>
+          <li>Sammlerstücke und Antikteppiche</li>
+        </ul>
+        <a class="btn btn--ink" href="#kontakt">Begutachtung</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================================================== Einsatzgebiet ==== -->
+<section class="bay bay--dark" id="gebiet" data-theme="dark">
+  <div class="shell">
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Einsatzgebiet</p>
+        <h2 class="bay__title rv" style="--d:.08s">Wo wir <em>abholen</em>.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Wir fahren selbst. Kein Kurier, keine Spedition — Ihr Teppich wechselt
+        zwischen Ihrem Zuhause und der Werkstatt kein einziges Mal die Hände.
+      </p>
+    </div>
+
+    <div class="geo">
+      <figure class="geo__map">
+        <svg class="ch" viewBox="17 -105 1301 967" role="img" aria-labelledby="ch-t ch-d" preserveAspectRatio="xMidYMid meet">
+<title id="ch-t">Einsatzgebiet der Teppichwerkstatt in der Schweiz</title>
+<desc id="ch-d">Umriss der Schweiz mit angedeuteten Seen und Kantonsgrenzen. Von Zürich aus laufen Ringe nach aussen und markieren die Kernzone und die erweiterte Zone.</desc>
+<g class="ch__scale" style="--zx:754.9; --zy:210.2">
+<g class="ch__land">
+<path d="M1291.800048828125 386.5l-8.699999809265137 -8.100000381469727l-9.800000190734863 -3.5999999046325684l-0.5 -3.700000047683716l-9.699999809265137 -9.0l-3.299999952316284 3.700000047683716l-6.0 0.0l-6.5 15.100000381469727l-3.0 1.399999976158142l0.5 10.300000190734863l-5.5 1.399999976158142l-15.199999809265137 -4.099999904632568l-4.300000190734863 14.100000381469727l1.2999999523162842 12.199999809265137l-10.800000190734863 0.20000000298023224l-3.5 4.900000095367432l-7.199999809265137 3.0999999046325684l-0.5 -2.0999999046325684l-14.800000190734863 3.5999999046325684l-3.0 -6.800000190734863l-10.199999809265137 -1.7000000476837158l0.5 -4.599999904632568l-7.300000190734863 -7.599999904632568l-12.5 -4.599999904632568l-2.0999999046325684 -5.0l-10.0 1.2999999523162842l-16.399999618530273 -8.199999809265137l-3.0999999046325684 -12.5l5.5 -9.100000381469727l-0.30000001192092896 -4.400000095367432l-4.5 -2.700000047683716l1.399999976158142 -5.800000190734863l-3.9000000953674316 -1.0l-8.0 4.0l-13.899999618530273 -10.399999618530273l-10.5 0.699999988079071l-18.299999237060547 -9.199999809265137l-11.5 4.0l-8.399999618530273 -3.5999999046325684l-14.600000381469727 4.0l-3.5 -5.400000095367432l-15.600000381469727 3.9000000953674316l-2.0999999046325684 -7.0l12.199999809265137 -13.0l-8.600000381469727 -31.399999618530273l4.400000095367432 -21.100000381469727l31.700000762939453 -56.29999923706055l8.600000381469727 -0.800000011920929l4.400000095367432 -4.300000190734863l0.20000000298023224 -3.5999999046325684l-5.300000190734863 -4.0l1.7000000476837158 -19.600000381469727l-12.0 -8.199999809265137l-3.9000000953674316 1.7000000476837158l-11.5 -14.100000381469727l-6.300000190734863 6.699999809265137l-13.899999618530273 -0.6000000238418579l-14.100000381469727 -9.800000190734863l0.6000000238418579 -3.9000000953674316l-12.0 -8.600000381469727l-3.0999999046325684 -12.699999809265137l-28.200000762939453 -19.0l-49.599998474121094 -23.200000762939453l-21.600000381469727 -3.0999999046325684l-19.799999237060547 11.199999809265137l-14.100000381469727 2.9000000953674316l-4.699999809265137 -3.299999952316284l-2.700000047683716 -7.400000095367432l-3.9000000953674316 -1.0l-0.699999988079071 -5.400000095367432l5.599999904632568 -0.699999988079071l-0.699999988079071 -4.5l-12.899999618530273 -1.2000000476837158l-5.5 -14.0l-2.799999952316284 3.799999952316284l2.0999999046325684 3.0l-7.300000190734863 5.099999904632568l0.699999988079071 3.299999952316284l5.900000095367432 0.699999988079071l2.4000000953674316 4.099999904632568l-3.299999952316284 7.0l-17.700000762939453 -5.800000190734863l1.5 -10.699999809265137l-4.099999904632568 -1.0l-2.5 -7.099999904632568l8.399999618530273 -4.400000095367432l-5.900000095367432 -6.099999904632568l-5.300000190734863 2.700000047683716l-4.199999809265137 -2.0l-1.0 -8.199999809265137l-6.199999809265137 -6.699999809265137l-2.5 2.4000000953674316l0.0 11.800000190734863l-6.599999904632568 3.700000047683716l-2.0999999046325684 -16.200000762939453l-13.199999809265137 -4.400000095367432l-1.399999976158142 5.400000095367432l3.5 5.400000095367432l-24.700000762939453 3.799999952316284l-9.0 12.800000190734863l0.30000001192092896 6.099999904632568l-13.600000381469727 9.800000190734863l5.300000190734863 5.400000095367432l-4.599999904632568 3.799999952316284l1.399999976158142 4.0l13.300000190734863 4.099999904632568l0.0 4.0l5.199999809265137 2.0999999046325684l-0.699999988079071 -3.4000000953674316l14.600000381469727 1.0l-0.699999988079071 -6.099999904632568l9.399999618530273 -3.700000047683716l4.199999809265137 3.0l8.600000381469727 -3.700000047683716l3.5 9.800000190734863l-2.299999952316284 3.4000000953674316l-2.299999952316284 -0.20000000298023224l0.5 -5.0l-2.799999952316284 2.4000000953674316l1.600000023841858 12.100000381469727l-4.199999809265137 9.699999809265137l-8.199999809265137 -2.700000047683716l3.0999999046325684 -5.699999809265137l-4.599999904632568 -4.099999904632568l-8.899999618530273 -3.0l-3.5 5.699999809265137l-7.300000190734863 1.7000000476837158l-5.599999904632568 6.099999904632568l2.799999952316284 4.400000095367432l4.900000095367432 -1.399999976158142l2.200000047683716 3.0999999046325684l-16.5 4.599999904632568l-9.699999809265137 -3.200000047683716l-4.599999904632568 3.299999952316284l-8.399999618530273 0.30000001192092896l-8.199999809265137 -3.0l-7.099999904632568 -6.699999809265137l-1.600000023841858 -6.599999904632568l-10.399999618530273 -3.5l-7.099999904632568 2.4000000953674316l-5.099999904632568 -4.400000095367432l-10.100000381469727 9.0l-17.600000381469727 7.099999904632568l-5.099999904632568 9.399999618530273l-7.300000190734863 -2.5l-13.0 6.300000190734863l-17.399999618530273 -2.200000047683716l-4.699999809265137 4.199999809265137l-6.199999809265137 -2.9000000953674316l-4.300000190734863 -12.899999618530273l-20.5 -0.4000000059604645l-9.100000381469727 11.300000190734863l-30.799999237060547 10.0l-13.199999809265137 -11.0l13.899999618530273 -4.199999809265137l-2.200000047683716 -7.400000095367432l7.300000190734863 -6.0l-9.300000190734863 3.5999999046325684l-5.199999809265137 -1.0l-5.5 7.099999904632568l-5.5 0.699999988079071l-0.800000011920929 -4.099999904632568l-4.199999809265137 -0.699999988079071l-1.2999999523162842 5.599999904632568l-6.0 0.4000000059604645l-1.7000000476837158 4.699999809265137l-16.299999237060547 10.699999809265137l1.2999999523162842 2.9000000953674316l5.5 -1.2000000476837158l2.700000047683716 2.700000047683716l-2.0 3.9000000953674316l-6.699999809265137 -0.5l4.0 7.800000190734863l-6.300000190734863 6.800000190734863l-5.0 0.5l-10.699999809265137 -6.900000095367432l-3.0 5.599999904632568l8.699999809265137 3.700000047683716l-13.0 14.600000381469727l-6.0 3.4000000953674316l-15.5 -4.300000190734863l-23.0 8.699999809265137l-3.700000047683716 -7.699999809265137l-10.300000190734863 1.399999976158142l-7.199999809265137 -3.200000047683716l6.5 -20.0l-9.300000190734863 0.800000011920929l-8.699999809265137 -4.900000095367432l-2.5 2.9000000953674316l-11.0 2.4000000953674316l-16.0 -5.5l-7.800000190734863 4.300000190734863l3.299999952316284 14.600000381469727l-9.300000190734863 3.9000000953674316l-2.200000047683716 4.900000095367432l-4.800000190734863 0.30000001192092896l-1.7000000476837158 11.100000381469727l-5.300000190734863 1.2999999523162842l-2.0 6.800000190734863l-7.199999809265137 4.900000095367432l-1.7999999523162842 6.300000190734863l42.29999923706055 -5.900000095367432l8.5 12.0l-4.300000190734863 6.800000190734863l-6.5 0.0l-7.5 11.899999618530273l-12.5 2.200000047683716l-0.699999988079071 14.899999618530273l2.200000047683716 4.800000190734863l-31.200000762939453 26.299999237060547l-0.30000001192092896 3.200000047683716l3.299999952316284 0.0l-1.7999999523162842 4.400000095367432l-29.700000762939453 19.200000762939453l1.5 7.5l-9.800000190734863 1.7000000476837158l-5.699999809265137 7.599999904632568l6.5 2.700000047683716l0.699999988079071 3.9000000953674316l-16.200000762939453 9.699999809265137l-3.799999952316284 10.699999809265137l-36.70000076293945 15.300000190734863l-3.0 -2.5999999046325684l-16.299999237060547 18.200000762939453l8.0 13.199999809265137l-1.5 17.700000762939453l-7.400000095367432 16.799999237060547l7.900000095367432 6.599999904632568l-2.700000047683716 7.800000190734863l-6.800000190734863 7.300000190734863l-8.600000381469727 3.299999952316284l-3.4000000953674316 6.0l-28.5 16.0l-46.0 44.099998474121094l12.300000190734863 14.300000190734863l-12.300000190734863 11.5l-4.699999809265137 13.100000381469727l-6.0 5.599999904632568l-0.800000011920929 4.900000095367432l3.299999952316284 5.800000190734863l-5.300000190734863 8.600000381469727l8.300000190734863 2.9000000953674316l20.5 16.799999237060547l-19.5 35.29999923706055l5.199999809265137 6.599999904632568l-1.5 9.0l-15.699999809265137 0.20000000298023224l-3.299999952316284 4.400000095367432l-4.0 -2.4000000953674316l-10.0 8.0l-5.5 0.699999988079071l-1.7000000476837158 7.300000190734863l6.199999809265137 3.9000000953674316l-4.699999809265137 2.9000000953674316l-5.5 14.199999809265137l4.199999809265137 5.300000190734863l4.0 -4.900000095367432l12.800000190734863 2.700000047683716l5.5 -5.800000190734863l21.700000762939453 4.099999904632568l14.5 -9.199999809265137l1.2999999523162842 -7.300000190734863l11.699999809265137 -9.800000190734863l4.0 0.800000011920929l13.800000190734863 -8.300000190734863l4.0 -6.599999904632568l-0.5 -4.400000095367432l-4.300000190734863 -2.9000000953674316l-5.699999809265137 5.099999904632568l-3.299999952316284 -0.5l-5.699999809265137 -11.899999618530273l3.0 -4.400000095367432l-8.0 -9.199999809265137l8.5 -19.0l23.5 -18.0l23.200000762939453 -4.400000095367432l28.0 -16.600000381469727l42.29999923706055 1.0l38.5 11.899999618530273l-3.799999952316284 20.5l-9.0 6.599999904632568l8.300000190734863 13.600000381469727l18.700000762939453 15.600000381469727l-3.200000047683716 12.899999618530273l-9.0 9.0l-3.0 8.100000381469727l0.0 12.100000381469727l-5.800000190734863 9.199999809265137l1.0 4.400000095367432l4.800000190734863 5.099999904632568l8.5 -0.699999988079071l16.0 3.9000000953674316l-3.799999952316284 11.399999618530273l1.2999999523162842 9.5l-4.0 8.5l3.200000047683716 2.0l8.5 -8.800000190734863l5.300000190734863 1.2000000476837158l0.5 5.199999809265137l2.4000000953674316 -1.7999999523162842l10.100000381469727 19.0l5.5 3.0l5.5 9.5l-4.300000190734863 2.9000000953674316l7.300000190734863 5.099999904632568l2.0 13.899999618530273l6.5 4.599999904632568l10.0 20.0l16.5 -8.100000381469727l3.0 5.099999904632568l6.699999809265137 2.5l-0.699999988079071 -4.900000095367432l6.699999809265137 -7.5l10.300000190734863 -0.5l6.699999809265137 -10.699999809265137l9.300000190734863 5.099999904632568l9.5 -0.800000011920929l0.20000000298023224 2.700000047683716l7.300000190734863 2.9000000953674316l17.200000762939453 -13.800000190734863l6.300000190734863 -0.800000011920929l0.699999988079071 -5.300000190734863l6.800000190734863 -5.099999904632568l12.199999809265137 2.200000047683716l2.299999952316284 -11.699999809265137l7.699999809265137 -1.0l2.299999952316284 6.599999904632568l23.700000762939453 -1.0l3.0 6.800000190734863l8.5 3.4000000953674316l2.0 9.300000190734863l4.300000190734863 0.5l3.700000047683716 -6.099999904632568l5.800000190734863 0.5l9.0 8.199999809265137l5.199999809265137 -3.4000000953674316l12.300000190734863 3.4000000953674316l3.0 -2.200000047683716l-2.4000000953674316 -4.5l3.4000000953674316 -15.399999618530273l8.5 -10.0l21.200000762939453 0.0l2.0 -6.300000190734863l3.0 -0.800000011920929l0.5 -7.5l5.0 -5.400000095367432l-2.5 -12.399999618530273l3.0 -10.199999809265137l20.299999237060547 -4.599999904632568l1.7000000476837158 -6.599999904632568l8.5 -3.200000047683716l3.299999952316284 -4.599999904632568l-2.200000047683716 -2.799999952316284l4.900000095367432 -8.899999618530273l-5.5 -14.800000190734863l-9.0 -8.300000190734863l0.0 -3.700000047683716l-8.5 -3.0999999046325684l0.5 -4.599999904632568l16.5 -15.600000381469727l6.5 2.700000047683716l10.800000190734863 -3.200000047683716l8.5 -14.399999618530273l7.699999809265137 -3.5999999046325684l0.5 -5.099999904632568l13.5 -6.099999904632568l0.30000001192092896 -7.599999904632568l-6.300000190734863 -3.0999999046325684l4.5 -8.100000381469727l4.5 0.0l12.5 -11.199999809265137l21.0 -4.599999904632568l6.800000190734863 6.800000190734863l-1.0 11.5l3.0 9.199999809265137l-2.0 3.700000047683716l1.5 12.399999618530273l-2.299999952316284 1.899999976158142l1.5 8.800000190734863l-9.100000381469727 12.699999809265137l6.099999904632568 14.800000190734863l-3.700000047683716 3.700000047683716l7.199999809265137 7.5l16.799999237060547 5.099999904632568l6.199999809265137 12.399999618530273l12.5 13.399999618530273l0.30000001192092896 6.800000190734863l4.199999809265137 6.900000095367432l8.800000190734863 0.0l3.700000047683716 4.599999904632568l13.0 4.599999904632568l8.300000190734863 -11.0l5.699999809265137 10.0l8.0 3.4000000953674316l5.800000190734863 -2.4000000953674316l12.699999809265137 10.5l-2.0 11.399999618530273l-3.0 -0.20000000298023224l-2.5999999046325684 8.399999618530273l-5.099999904632568 2.299999952316284l-4.800000190734863 10.0l11.5 2.4000000953674316l11.800000190734863 13.899999618530273l4.199999809265137 0.0l0.800000011920929 6.5l9.5 14.199999809265137l4.5 14.800000190734863l-8.0 13.199999809265137l12.5 -3.9000000953674316l3.0 3.4000000953674316l4.699999809265137 -1.7000000476837158l2.5 5.099999904632568l5.5 2.9000000953674316l8.5 -22.899999618530273l7.5 -6.800000190734863l-7.699999809265137 -10.699999809265137l-10.0 -3.700000047683716l-1.2999999523162842 -10.399999618530273l-6.199999809265137 -5.099999904632568l1.5 -4.400000095367432l7.199999809265137 -3.700000047683716l0.800000011920929 -4.599999904632568l-5.800000190734863 -12.399999618530273l3.799999952316284 -7.599999904632568l8.199999809265137 -5.300000190734863l8.0 -0.699999988079071l3.299999952316284 -7.400000095367432l-4.300000190734863 -14.300000190734863l13.0 -7.300000190734863l11.0 -13.899999618530273l6.800000190734863 -0.5l4.5 -14.600000381469727l6.199999809265137 -8.300000190734863l6.0 -1.899999976158142l1.5 -12.899999618530273l8.800000190734863 -12.699999809265137l4.0 -19.399999618530273l-4.800000190734863 -4.400000095367432l0.0 -20.700000762939453l-8.699999809265137 -9.300000190734863l0.0 -7.0l6.699999809265137 -3.4000000953674316l2.5 -15.100000381469727l9.800000190734863 -4.199999809265137l13.199999809265137 -1.2000000476837158l3.5 1.7000000476837158l-1.2000000476837158 4.900000095367432l5.5 7.5l5.0 2.700000047683716l3.5 -3.5999999046325684l0.20000000298023224 -6.400000095367432l10.800000190734863 -6.300000190734863l1.0 17.0l-3.0 18.299999237060547l4.199999809265137 13.100000381469727l-2.200000047683716 3.9000000953674316l11.0 6.400000095367432l5.699999809265137 15.800000190734863l6.300000190734863 6.800000190734863l17.0 3.4000000953674316l3.0 2.9000000953674316l6.0 0.0l10.0 -5.800000190734863l7.0 4.599999904632568l6.0 -9.699999809265137l-2.5 -4.400000095367432l5.199999809265137 -10.0l11.0 6.099999904632568l19.5 -11.399999618530273l10.300000190734863 -1.2999999523162842l7.0 -5.599999904632568l6.0 4.900000095367432l8.5 -4.099999904632568l3.5 7.0l7.0 3.200000047683716l-3.5 12.899999618530273l5.400000095367432 6.5l-1.2000000476837158 7.599999904632568l18.399999618530273 10.899999618530273l-2.4000000953674316 12.0l4.5 3.700000047683716l4.400000095367432 -3.9000000953674316l14.399999618530273 0.4000000059604645l10.0 -10.199999809265137l-0.5 -3.9000000953674316l-3.299999952316284 -1.899999976158142l-2.5 -9.0l-9.699999809265137 -7.800000190734863l-4.0 -9.0l1.0 -7.800000190734863l5.199999809265137 -3.700000047683716l0.0 -7.0l5.800000190734863 -3.9000000953674316l4.199999809265137 1.0l-0.20000000298023224 -10.0l-3.299999952316284 0.699999988079071l-2.5 -6.599999904632568l-16.200000762939453 2.5l-11.5 -9.0l3.5 -8.100000381469727l-2.5 -4.599999904632568l0.0 -14.100000381469727l2.200000047683716 -2.5l-1.7000000476837158 -10.699999809265137l10.199999809265137 -9.199999809265137l-1.5 -5.400000095367432l4.800000190734863 -0.5l2.700000047683716 -13.100000381469727l7.5 1.899999976158142l14.0 -8.199999809265137l8.5 2.5999999046325684l8.300000190734863 -6.300000190734863l5.5 11.0l-4.800000190734863 8.699999809265137l2.0 6.900000095367432l3.799999952316284 -3.200000047683716l7.199999809265137 3.5999999046325684l2.5 7.599999904632568l7.300000190734863 -0.699999988079071l4.199999809265137 4.099999904632568l2.5 -5.900000095367432l4.300000190734863 0.0l8.0 4.400000095367432l5.699999809265137 -2.4000000953674316l9.800000190734863 6.099999904632568l4.5 -3.4000000953674316l4.5 -26.299999237060547l-8.899999618530273 -10.600000381469727l-14.600000381469727 1.2999999523162842l-5.800000190734863 -20.399999618530273l9.100000381469727 -10.199999809265137l-3.5999999046325684 -11.199999809265137l10.800000190734863 -8.100000381469727l-0.30000001192092896 -5.800000190734863l-4.5 -5.400000095367432l1.0 -5.800000190734863l3.799999952316284 0.20000000298023224l6.199999809265137 -18.0l4.5 -4.900000095367432l-3.0 -10.699999809265137Z"/>
+</g>
+<g class="ch__cantons">
+<path d="M291.1000061035156 293.5l3.700000047683716 -3.200000047683716l4.0 9.5l19.0 -15.100000381469727l8.5 5.099999904632568l11.300000190734863 -8.300000190734863l8.699999809265137 -18.5l26.899999618530273 -1.5l-2.0999999046325684 -7.900000095367432l6.0 -10.5l29.200000762939453 3.4000000953674316l28.299999237060547 -11.699999809265137l33.0 5.099999904632568l14.199999809265137 -6.599999904632568"/>
+<path d="M484.29998779296875 222.89999389648438l-7.699999809265137 8.5l11.5 -3.200000047683716l-13.300000190734863 -17.0l-29.200000762939453 -2.9000000953674316l-8.5 -13.199999809265137"/>
+<path d="M421.29998779296875 184.1999969482422l7.800000190734863 10.399999618530273l24.0 0.800000011920929l2.200000047683716 -9.5l-10.0 -3.4000000953674316"/>
+<path d="M452.1000061035156 208.5l1.5 -9.5l15.5 7.599999904632568l8.199999809265137 -12.0l13.800000190734863 0.0l-3.5 -9.5l13.199999809265137 1.5l-2.200000047683716 -22.100000381469727l13.5 0.8999999761581421l-1.5 -4.400000095367432l16.200000762939453 12.0l-8.0 9.199999809265137l-0.5 10.5l-13.199999809265137 3.5999999046325684l3.200000047683716 17.100000381469727l22.5 -1.2000000476837158l7.800000190734863 10.899999618530273l9.0 1.7000000476837158l4.199999809265137 -9.199999809265137l21.0 -8.800000190734863l-2.5 -5.300000190734863l5.5 -4.199999809265137l12.5 -0.20000000298023224l7.300000190734863 -7.599999904632568l17.899999618530273 13.0l-6.599999904632568 23.399999618530273l-14.300000190734863 7.0l-0.30000001192092896 -5.900000095367432l-11.199999809265137 -4.800000190734863l-2.9000000953674316 11.100000381469727l-9.399999618530273 2.9000000953674316l-10.899999618530273 18.0l-25.299999237060547 2.5l-11.5 -13.399999618530273l-31.0 7.099999904632568l28.0 37.70000076293945l-7.800000190734863 12.899999618530273l-34.70000076293945 -5.599999904632568l-2.799999952316284 14.600000381469727l-15.0 7.599999904632568l4.0 9.199999809265137l-9.699999809265137 4.699999809265137l-1.7999999523162842 -9.800000190734863l-13.699999809265137 1.2000000476837158l-3.5 -10.899999618530273l18.5 -0.30000001192092896l-2.799999952316284 -7.800000190734863l18.299999237060547 -11.600000381469727l-6.300000190734863 -8.100000381469727l-24.700000762939453 11.5l2.5 -3.4000000953674316l-13.5 -18.5l52.5 -30.700000762939453l4.199999809265137 -11.899999618530273"/>
+<path d="M718.5999755859375 305.6000061035156l-12.5 -2.9000000953674316l-17.799999237060547 -52.29999923706055l-10.199999809265137 -5.400000095367432l-8.0 5.400000095367432l-7.800000190734863 18.700000762939453l-7.699999809265137 1.7000000476837158l-5.0 -6.5l5.699999809265137 -0.800000011920929l-2.5 -5.300000190734863l-12.199999809265137 4.900000095367432l-9.800000190734863 -8.100000381469727l-20.5 7.599999904632568l-5.699999809265137 -14.899999618530273l-12.0 3.4000000953674316l3.5 7.099999904632568l-6.800000190734863 8.0l-8.600000381469727 -3.5999999046325684l-16.5 4.400000095367432l-6.300000190734863 -12.800000190734863"/>
+<path d="M734.5999755859375 362.29998779296875l10.5 -2.0999999046325684l2.700000047683716 -7.599999904632568l-19.0 -15.5l-14.0 0.699999988079071l-1.5 -4.199999809265137l8.5 -13.600000381469727l9.300000190734863 -3.5999999046325684"/>
+<path d="M791.2000122070312 83.5999984741211l-1.399999976158142 6.099999904632568l10.5 13.199999809265137l14.0 0.0l9.0 -9.0l9.0 6.800000190734863l-5.699999809265137 19.0l-14.800000190734863 -8.100000381469727l-2.0 6.099999904632568l18.5 14.100000381469727l7.5 -0.699999988079071l2.5 16.299999237060547l14.800000190734863 2.200000047683716l-4.0 21.399999618530273l12.199999809265137 15.100000381469727l-5.199999809265137 2.200000047683716l-0.5 12.399999618530273l10.0 5.599999904632568l12.0 26.299999237060547l-13.800000190734863 12.699999809265137l0.0 11.699999809265137l-22.200000762939453 6.5l-13.0 -1.899999976158142l-5.300000190734863 8.699999809265137"/>
+<path d="M1041.5999755859375 196.6999969482422l-7.300000190734863 -10.5l19.700000762939453 -4.699999809265137l-24.899999618530273 -9.199999809265137l-3.200000047683716 7.099999904632568l-25.399999618530273 8.199999809265137l-1.0 9.800000190734863l-54.29999923706055 5.800000190734863l-5.199999809265137 12.199999809265137l-5.599999904632568 0.30000001192092896l11.199999809265137 12.899999618530273l-5.900000095367432 3.4000000953674316l3.4000000953674316 11.800000190734863l-5.5 6.099999904632568l54.900001525878906 15.899999618530273l21.899999618530273 -18.200000762939453l5.300000190734863 -43.099998474121094l17.399999618530273 -3.4000000953674316l14.199999809265137 -15.800000190734863"/>
+<path d="M1016.2999877929688 340.70001220703125l-3.0 2.4000000953674316l16.0 28.0l-15.0 16.299999237060547l-8.699999809265137 24.600000381469727l-18.399999618530273 -8.399999618530273l-33.900001525878906 -2.299999952316284l-4.199999809265137 -5.300000190734863"/>
+<path d="M847.5999755859375 436.6000061035156l15.199999809265137 7.300000190734863l20.299999237060547 -7.0l14.5 -24.899999618530273l14.199999809265137 9.800000190734863l12.0 -11.199999809265137l13.5 -2.0l11.800000190734863 -12.600000381469727l-2.9000000953674316 -42.79999923706055l-27.5 -7.099999904632568l15.0 -11.899999618530273l-1.0 -23.700000762939453l-38.29999923706055 -5.099999904632568l-17.100000381469727 -18.0l-6.199999809265137 2.200000047683716l2.5 -16.100000381469727l-40.79999923706055 2.4000000953674316l-9.5 -5.599999904632568l-14.699999809265137 1.0l-13.5 13.699999809265137l4.5 15.5l-16.299999237060547 23.600000381469727l-21.200000762939453 5.400000095367432l-0.800000011920929 -5.099999904632568l-12.5 0.5l-17.700000762939453 -8.5l-2.0 -7.300000190734863l-10.0 2.4000000953674316l-0.800000011920929 -51.900001525878906l-6.0 -15.300000190734863l12.300000190734863 -4.099999904632568l6.5 -13.399999618530273l-11.300000190734863 3.5l-5.199999809265137 -27.399999618530273l-7.5 -2.200000047683716l6.5 -10.399999618530273l-4.300000190734863 -1.5l3.0 -8.5l-7.199999809265137 -22.700000762939453l10.0 -7.0l9.300000190734863 -21.200000762939453"/>
+<path d="M711.2999877929688 581.0l3.5 -15.600000381469727l14.300000190734863 -1.0l10.300000190734863 -14.0l10.399999618530273 -3.0l3.0 -18.0l26.799999237060547 3.4000000953674316l3.700000047683716 4.800000190734863l14.0 -6.300000190734863l41.5 7.099999904632568l19.0 -11.699999809265137l-0.20000000298023224 -12.699999809265137l11.699999809265137 -3.5999999046325684l2.0 10.899999618530273l11.300000190734863 -3.4000000953674316l10.199999809265137 9.0l-7.199999809265137 15.899999618530273l0.20000000298023224 16.799999237060547l7.300000190734863 12.100000381469727l9.5 0.0l6.199999809265137 26.299999237060547l-14.0 51.099998474121094l9.0 29.299999237060547l20.0 16.5"/>
+<path d="M793.5999755859375 531.5999755859375l-1.0 -15.899999618530273l-7.5 -6.5l6.699999809265137 -23.399999618530273l19.299999237060547 -9.5l4.5 -10.699999809265137l6.699999809265137 6.300000190734863l6.800000190734863 -2.9000000953674316l6.5 -12.199999809265137l-2.0 -9.0l13.199999809265137 -9.199999809265137l-0.20000000298023224 -12.199999809265137l23.0 -13.899999618530273l-6.0 -17.5"/>
+<path d="M672.2999877929688 371.8999938964844l-21.0 5.099999904632568l1.5 10.0l-14.5 17.700000762939453l-4.5 -7.800000190734863l-6.699999809265137 5.900000095367432l-0.800000011920929 14.800000190734863l-6.599999904632568 6.800000190734863l4.099999904632568 22.399999618530273l8.0 -0.20000000298023224l15.300000190734863 13.100000381469727l12.199999809265137 -5.800000190734863l27.0 6.599999904632568l21.799999237060547 -12.899999618530273l7.699999809265137 8.5l25.799999237060547 -1.2000000476837158l-6.0 -13.899999618530273l11.0 -17.799999237060547l-10.5 -2.9000000953674316l3.0999999046325684 -11.399999618530273l-5.599999904632568 -5.599999904632568l27.700000762939453 -17.100000381469727l3.299999952316284 -22.600000381469727"/>
+<path d="M709.7999877929688 447.29998779296875l-13.699999809265137 -15.600000381469727l6.199999809265137 -40.599998474121094l-14.5 -3.200000047683716l5.0 -6.300000190734863l-2.0 -11.699999809265137l-19.700000762939453 2.0l-1.2999999523162842 -7.099999904632568l28.799999237060547 -1.2000000476837158l9.699999809265137 -10.199999809265137l4.800000190734863 9.5l11.699999809265137 -1.0l0.800000011920929 -6.099999904632568l8.5 2.200000047683716l5.599999904632568 11.600000381469727l27.200000762939453 -6.300000190734863l3.700000047683716 18.5l26.700000762939453 2.0l3.799999952316284 12.199999809265137l17.5 -9.5l6.0 4.099999904632568l5.699999809265137 -3.5999999046325684l5.300000190734863 12.600000381469727l4.199999809265137 -1.899999976158142l1.7999999523162842 11.699999809265137l29.200000762939453 -17.100000381469727l2.5 -13.100000381469727l-20.700000762939453 -25.600000381469727l1.5 -7.099999904632568l10.5 -2.0999999046325684l10.0 -16.799999237060547l-5.5 -4.400000095367432l13.5 -32.20000076293945"/>
+<path d="M390.6000061035156 630.5999755859375l7.599999904632568 -0.10000000149011612l3.5999999046325684 -11.300000190734863l13.800000190734863 -6.300000190734863l1.0 12.399999618530273l34.5 -16.600000381469727l5.199999809265137 3.9000000953674316l6.300000190734863 -3.9000000953674316l1.5 5.900000095367432l14.199999809265137 -1.7000000476837158l5.800000190734863 -5.400000095367432l-8.0 -3.4000000953674316l2.200000047683716 -5.099999904632568l17.200000762939453 -0.800000011920929l8.100000381469727 -12.100000381469727l24.700000762939453 11.399999618530273l35.5 -24.799999237060547l31.299999237060547 -12.399999618530273l0.699999988079071 -14.100000381469727l14.800000190734863 -9.0l27.5 6.0l17.0 10.800000190734863l23.0 -3.5l28.200000762939453 -19.899999618530273l2.5 -20.5l7.5 -8.5l6.0 1.2000000476837158l-4.0 26.299999237060547l6.0 16.299999237060547l12.800000190734863 7.599999904632568"/>
+<path d="M622.5999755859375 444.70001220703125l-23.5 7.300000190734863l-5.5 -11.199999809265137l-23.5 -17.299999237060547l-3.299999952316284 -13.399999618530273l7.5 -10.5l-2.5999999046325684 -5.099999904632568l12.100000381469727 -4.599999904632568l10.5 -28.0l-14.5 -1.7000000476837158l-9.100000381469727 -18.5l0.4000000059604645 -29.700000762939453l5.199999809265137 -7.099999904632568l-14.199999809265137 -39.20000076293945"/>
+<path d="M183.3000030517578 422.70001220703125l46.5 -16.5l4.5 -8.0l19.799999237060547 -9.800000190734863l2.700000047683716 25.799999237060547l12.0 4.900000095367432"/>
+<path d="M341.0 368.1000061035156l-1.399999976158142 -18.600000381469727l14.5 -12.199999809265137l-1.5 -14.899999618530273l-12.5 -2.4000000953674316l-1.0 -10.199999809265137l-27.799999237060547 6.800000190734863l-16.700000762939453 10.5l5.5 -19.0l-9.0 -14.600000381469727"/>
+<path d="M300.1000061035156 390.3999938964844l20.5 24.299999237060547l2.700000047683716 -8.0l4.0 4.800000190734863l-3.0 11.5l4.5 6.599999904632568l-9.199999809265137 3.9000000953674316l-0.5 15.300000190734863l-13.800000190734863 10.699999809265137l10.5 4.900000095367432l-21.5 24.799999237060547l2.0 9.0l-21.5 6.099999904632568l-0.699999988079071 26.799999237060547l4.900000095367432 -3.5999999046325684l25.600000381469727 4.800000190734863l1.0 5.599999904632568l-10.5 10.0l-12.300000190734863 -3.9000000953674316l-2.5 7.800000190734863l11.0 12.100000381469727l11.5 -10.399999618530273l-0.20000000298023224 3.9000000953674316l15.699999809265137 2.9000000953674316l8.0 10.699999809265137l0.30000001192092896 16.100000381469727l17.5 -18.799999237060547l21.200000762939453 -6.800000190734863l5.800000190734863 -12.199999809265137l12.699999809265137 -6.800000190734863l5.800000190734863 6.099999904632568l18.700000762939453 -20.200000762939453l6.5 1.7000000476837158l5.0 -29.899999618530273l9.800000190734863 6.5l4.400000095367432 -5.400000095367432l1.600000023841858 -15.0l-9.800000190734863 -3.9000000953674316l1.5 -4.599999904632568l-13.699999809265137 -3.0999999046325684l-5.0 -23.100000381469727l10.399999618530273 -23.799999237060547l-4.199999809265137 -6.300000190734863l12.399999618530273 -7.5l-3.5 -8.5l-38.599998474121094 -3.200000047683716l5.5 -11.699999809265137l-3.799999952316284 -14.399999618530273l10.0 -8.5l-3.700000047683716 -8.5l-32.0 11.399999618530273l-30.299999237060547 -3.799999952316284l-71.5 62.79999923706055l13.300000190734863 11.399999618530273l-2.0 6.099999904632568l12.5 4.900000095367432l9.5 -5.400000095367432l6.699999809265137 6.099999904632568l5.800000190734863 -2.4000000953674316l5.0 -10.300000190734863l-6.5 -0.8999999761581421l6.699999809265137 -18.5l-9.699999809265137 -4.699999809265137l8.199999809265137 -1.899999976158142l-16.0 -16.799999237060547"/>
+<path d="M395.29998779296875 541.5l3.799999952316284 12.5l-6.300000190734863 12.899999618530273l-1.0 18.5l-8.199999809265137 3.4000000953674316l4.0 6.099999904632568l-4.5 16.0l10.199999809265137 6.099999904632568l-2.700000047683716 13.600000381469727l-8.5 9.300000190734863l0.5 13.399999618530273l-28.5 28.200000762939453l-12.100000381469727 5.199999809265137l-32.900001525878906 -62.400001525878906l-6.599999904632568 0.0l-3.5999999046325684 -14.300000190734863l-18.799999237060547 -18.100000381469727"/>
+<path d="M452.6000061035156 175.1999969482422l4.199999809265137 5.300000190734863l21.299999237060547 -5.099999904632568l0.20000000298023224 -11.399999618530273l-5.699999809265137 -3.4000000953674316"/>
+<path d="M594.0999755859375 176.60000610351562l-3.299999952316284 -10.699999809265137l-11.699999809265137 -0.20000000298023224l-13.300000190734863 -20.0l-18.0 16.799999237060547l-0.20000000298023224 -10.699999809265137l-20.100000381469727 -9.699999809265137"/>
+<path d="M797.0999755859375 295.20001220703125l-19.799999237060547 -3.4000000953674316l-2.5 -12.0l-21.200000762939453 -7.699999809265137l-15.0 5.300000190734863l-16.299999237060547 -6.099999904632568l-4.0 -9.800000190734863"/>
+<path d="M866.5999755859375 209.6999969482422l11.199999809265137 -20.899999618530273l19.399999618530273 -5.599999904632568l-12.5 -10.899999618530273l2.4000000953674316 -8.399999618530273l17.100000381469727 -0.699999988079071l10.399999618530273 5.800000190734863l13.899999618530273 -9.800000190734863l11.199999809265137 10.100000381469727l25.399999618530273 0.4000000059604645l3.799999952316284 -13.300000190734863l-13.899999618530273 0.0l15.600000381469727 -8.800000190734863l8.0 5.5l-4.199999809265137 7.800000190734863l9.800000190734863 -1.399999976158142l-2.200000047683716 6.800000190734863l7.699999809265137 4.300000190734863l13.0 -13.800000190734863"/>
+<path d="M1019.0 221.8000030517578l-39.29999923706055 -14.899999618530273l2.299999952316284 9.5l-16.0 15.300000190734863l8.699999809265137 29.399999618530273"/>
+<path d="M1034.300048828125 202.5l-4.0 -4.400000095367432l7.400000095367432 -3.4000000953674316l-8.300000190734863 -7.5l-7.400000095367432 14.899999618530273"/>
+<path d="M716.2999877929688 453.8999938964844l8.300000190734863 -1.7000000476837158l-14.800000190734863 -17.5l-3.5 -21.5l5.300000190734863 -0.20000000298023224l-2.299999952316284 9.800000190734863l10.0 -8.300000190734863l3.299999952316284 7.0l13.5 -1.2000000476837158"/>
+<path d="M311.79998779296875 379.20001220703125l16.5 16.0l1.2999999523162842 13.199999809265137l11.0 3.5999999046325684l1.7000000476837158 11.699999809265137l9.0 -10.899999618530273l-3.5 -3.200000047683716l11.300000190734863 -7.099999904632568l-12.800000190734863 -16.799999237060547l-1.2000000476837158 -17.0"/>
+<path d="M119.30000305175781 629.7000122070312l-11.600000381469727 -7.199999809265137l-6.400000095367432 2.299999952316284l4.800000190734863 -9.0l15.199999809265137 9.0"/>
+</g>
+<g class="ch__lakes">
+<path d="M308.3999938964844 597.5999755859375l-2.5 5.099999904632568l-16.100000381469727 3.0l-39.599998474121094 -8.199999809265137l-25.100000381469727 0.6000000238418579l-17.200000762939453 3.200000047683716l-9.100000381469727 -1.399999976158142l-5.0 5.400000095367432l0.8999999761581421 -6.199999809265137l-7.400000095367432 4.5l-3.5999999046325684 7.699999809265137l-15.600000381469727 5.699999809265137l-6.5 7.400000095367432l-8.100000381469727 -3.200000047683716l-3.799999952316284 -7.900000095367432l-8.300000190734863 -0.10000000149011612l-10.100000381469727 6.900000095367432l-18.200000762939453 32.5l-5.699999809265137 3.9000000953674316l-4.199999809265137 14.899999618530273l-3.799999952316284 4.800000190734863l-3.9000000953674316 0.8999999761581421l0.30000001192092896 -16.200000762939453l18.700000762939453 -44.900001525878906l7.800000190734863 -9.399999618530273l8.699999809265137 -4.199999809265137l4.099999904632568 -10.199999809265137l12.5 -13.399999618530273l7.099999904632568 -3.0999999046325684l10.399999618530273 1.100000023841858l15.699999809265137 -6.900000095367432l14.399999618530273 -14.899999618530273l6.5 2.799999952316284l15.399999618530273 -1.899999976158142l28.0 5.400000095367432l7.300000190734863 5.099999904632568l6.800000190734863 0.10000000149011612l9.0 5.599999904632568l13.899999618530273 2.700000047683716l21.100000381469727 12.600000381469727Z"/>
+<path d="M343.1000061035156 366.0l-5.699999809265137 8.199999809265137l-35.20000076293945 27.600000381469727l-16.299999237060547 17.200000762939453l-13.300000190734863 8.899999618530273l-7.699999809265137 9.699999809265137l-12.300000190734863 -0.5l-16.399999618530273 8.0l-6.199999809265137 -0.6000000238418579l1.100000023841858 -5.5l24.299999237060547 -18.799999237060547l15.399999618530273 -20.5l21.299999237060547 -16.600000381469727l4.699999809265137 -13.800000190734863l14.5 -5.099999904632568l14.199999809265137 -9.199999809265137l7.800000190734863 4.599999904632568l6.599999904632568 -0.20000000298023224Z"/>
+<path d="M762.0999755859375 863.7000122070312l-8.199999809265137 -19.399999618530273l2.299999952316284 -9.399999618530273l4.5 -2.799999952316284l0.20000000298023224 -17.5l-4.300000190734863 -7.099999904632568l-9.699999809265137 -5.599999904632568l-9.100000381469727 -14.699999809265137l6.099999904632568 -3.4000000953674316l15.399999618530273 9.199999809265137l4.300000190734863 -6.300000190734863l11.699999809265137 -8.5l14.5 -24.600000381469727l7.599999904632568 -2.5999999046325684l3.299999952316284 -4.699999809265137l-4.900000095367432 -18.200000762939453l6.900000095367432 -19.5l10.899999618530273 -9.300000190734863l9.699999809265137 1.7999999523162842l4.0 -8.800000190734863l8.0 -2.700000047683716l5.599999904632568 6.699999809265137l-1.2000000476837158 1.600000023841858l3.9000000953674316 2.200000047683716l-17.799999237060547 5.699999809265137l-18.299999237060547 14.100000381469727l-3.9000000953674316 7.300000190734863l1.7999999523162842 15.399999618530273l5.0 7.5l-0.800000011920929 7.199999809265137l-8.300000190734863 5.900000095367432l-1.399999976158142 5.199999809265137l-13.0 9.699999809265137l-1.7999999523162842 4.900000095367432l-11.800000190734863 8.899999618530273l0.20000000298023224 4.800000190734863l-6.0 5.900000095367432l8.800000190734863 25.299999237060547l-7.900000095367432 12.899999618530273l-7.900000095367432 0.6000000238418579l0.30000001192092896 8.899999618530273l3.299999952316284 2.4000000953674316l4.199999809265137 11.0Z"/>
+<path d="M775.4000244140625 400.1000061035156l-5.099999904632568 4.099999904632568l-5.300000190734863 -17.600000381469727l3.0 -21.5l-25.0 9.699999809265137l-21.5 -6.300000190734863l-0.6000000238418579 -3.0999999046325684l9.699999809265137 -3.799999952316284l0.0 -2.4000000953674316l-22.200000762939453 0.0l-7.5 7.5l-8.0 1.100000023841858l-0.800000011920929 -10.899999618530273l6.099999904632568 1.7000000476837158l1.600000023841858 -5.800000190734863l-1.600000023841858 -8.0l-5.599999904632568 -5.900000095367432l3.9000000953674316 -0.10000000149011612l6.199999809265137 6.599999904632568l3.5 0.20000000298023224l18.600000381469727 -18.200000762939453l-4.199999809265137 15.199999809265137l-5.5 5.699999809265137l5.099999904632568 2.0l5.800000190734863 -2.4000000953674316l6.0 2.5999999046325684l5.599999904632568 6.300000190734863l-1.399999976158142 4.599999904632568l4.800000190734863 2.0999999046325684l15.100000381469727 0.6000000238418579l10.199999809265137 -4.300000190734863l3.700000047683716 2.9000000953674316Z"/>
+<path d="M865.2999877929688 270.3999938964844l-9.0 6.800000190734863l-14.0 0.800000011920929l-3.4000000953674316 4.400000095367432l-11.899999618530273 -3.700000047683716l-1.2999999523162842 -5.400000095367432l-4.400000095367432 3.299999952316284l-12.399999618530273 -1.600000023841858l-3.200000047683716 3.5999999046325684l-21.399999618530273 -20.899999618530273l-6.5 0.10000000149011612l-10.300000190734863 -6.800000190734863l-15.0 -32.5l1.600000023841858 -5.599999904632568l5.400000095367432 5.800000190734863l10.699999809265137 24.0l7.300000190734863 7.099999904632568l12.5 5.099999904632568l12.899999618530273 9.100000381469727l7.5 2.4000000953674316l18.899999618530273 -1.5l-0.6000000238418579 3.700000047683716l2.5 2.700000047683716l8.300000190734863 2.0Z"/>
+<path d="M504.70001220703125 460.5l16.600000381469727 15.5l10.399999618530273 5.199999809265137l4.300000190734863 7.199999809265137l17.899999618530273 0.699999988079071l4.099999904632568 4.5l-2.299999952316284 3.0999999046325684l-4.400000095367432 -1.0l-9.600000381469727 3.200000047683716l-14.399999618530273 -5.5l-7.800000190734863 -9.5l-5.599999904632568 -2.0l-9.899999618530273 -9.600000381469727Z"/>
+<path d="M735.7000122070312 286.79998779296875l12.0 6.5l-5.599999904632568 17.0l7.0 12.100000381469727l1.2000000476837158 7.5l-2.700000047683716 3.299999952316284l-13.600000381469727 -12.699999809265137l5.900000095367432 -6.5l-6.599999904632568 -3.200000047683716l1.5 -6.699999809265137l-3.0 -3.200000047683716l-0.30000001192092896 -9.0Z"/>
+</g>
+<g class="ch__rings">
+<circle class="ch__zone" cx="754.9" cy="210.2" r="108.8"/>
+<circle class="ch__zone ch__zone--wide" cx="754.9" cy="210.2" r="308.2"/>
+<g class="ch__sonar" data-cx="754.9" data-cy="210.2" data-rmax="210">
+<circle cx="754.9" cy="210.2" r="0"/>
+<circle cx="754.9" cy="210.2" r="0"/>
+<circle cx="754.9" cy="210.2" r="0"/>
+</g>
+</g>
+<g class="ch__spots">
+<circle class="s s--kern" cx="809.1" cy="160.7" r="4"/>
+<circle class="s s--kern" cx="690.0" cy="171.4" r="4"/>
+<circle class="s s--kern" cx="747.7" cy="294.8" r="4"/>
+<circle class="s s--kern" cx="831.0" cy="270.8" r="4"/>
+<circle class="s s--weit" cx="779.2" cy="82.1" r="4"/>
+<circle class="s s--weit" cx="984.8" cy="191.1" r="4"/>
+<circle class="s s--weit" cx="690.9" cy="341.4" r="4"/>
+<circle class="s s--weit" cx="492.5" cy="136.8" r="4"/>
+<circle class="s s--weit" cx="453.6" cy="382.4" r="4"/>
+<circle class="s s--fern" cx="1027.5" cy="421.4" r="4"/>
+<circle class="s s--fern" cx="229.3" cy="554.4" r="4"/>
+<circle class="s s--fern" cx="94.6" cy="681.0" r="4"/>
+<circle class="s s--fern" cx="867.6" cy="761.6" r="4"/>
+<circle class="ch__hub" cx="754.9" cy="210.2" r="9"/>
+<circle class="ch__hubdot" cx="754.9" cy="210.2" r="4.6"/>
+</g>
+</g>
+</svg>
+        <figcaption class="geo__cap">
+          Ausgangspunkt ist das Büro an der Dufourstrasse. Die Ringe zeigen 30 und 85 Kilometer.
+        </figcaption>
+      </figure>
+
+      <div class="geo__zones">
+        <article class="zone rv">
+          <p class="zone__key"><i class="zone__dot zone__dot--kern"></i>Kernzone</p>
+          <h3 class="zone__name">Zürich und Umgebung</h3>
+          <p class="zone__places">Zürich · Winterthur · Baden · Zug · Rapperswil</p>
+          <p class="zone__note">
+            Abholung und Zustellung kostenlos, in der Regel innert 48 Stunden.
+            Auf Wunsch bringen wir einen Leihteppich mit.
+          </p>
+        </article>
+
+        <article class="zone rv" style="--d:.09s">
+          <p class="zone__key"><i class="zone__dot zone__dot--weit"></i>Erweitert · bis 85 km</p>
+          <h3 class="zone__name">Nordwest- und Ostschweiz</h3>
+          <p class="zone__places">Basel · Bern · Luzern · St. Gallen · Schaffhausen</p>
+          <p class="zone__note">
+            Kostenlos ab zwei Teppichen oder acht Quadratmetern. Darunter
+            berechnen wir eine Fahrpauschale von CHF 120.
+          </p>
+        </article>
+
+        <article class="zone rv" style="--d:.18s">
+          <p class="zone__key"><i class="zone__dot zone__dot--fern"></i>Übrige Schweiz</p>
+          <h3 class="zone__name">Auf Anfrage</h3>
+          <p class="zone__places">Genf · Lausanne · Chur · Lugano · Tessin</p>
+          <p class="zone__note">
+            Wir bündeln Fahrten und melden uns mit dem nächsten Sammeltermin.
+            Für Sammlerstücke kommen wir auch einzeln.
+          </p>
+        </article>
+
+        <p class="rv" style="--d:.26s; margin-top:2rem">
+          <a class="tlink" href="#kontakt">Abholung anfragen
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+              <path d="M9 1l4 4-4 4M13 5H0" stroke="currentColor" stroke-width="1.3"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== Kontakt ==== -->
+<section class="bay bay--deep" id="kontakt" data-theme="dark">
+  <div class="shell">
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Kontakt</p>
+        <h2 class="bay__title rv" style="--d:.08s">Wir holen ihn <em>ab</em>.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Sagen Sie uns, worum es geht. Wir melden uns innerhalb eines Werktags
+        mit einem Vorschlag für den Termin — zur Beratung bei Ihnen oder gleich
+        zur Abholung.
+      </p>
+    </div>
+
+    <div class="reach">
+      <div class="rv">
+        <div class="reach__block">
+          <p class="reach__label">Büro</p>
+          <p class="reach__value">Dufourstrasse 49<br>8008 Zürich</p>
+          <p class="reach__hint">Ansprechstelle für Hausbesuch und Abholung.
+            Gewaschen und geknüpft wird in der Werkstatt.</p>
+        </div>
+        <div class="reach__block">
+          <p class="reach__label">Telefon</p>
+          <p class="reach__value"><a href="tel:0732220320">0732 220 320</a></p>
+        </div>
+        <div class="reach__block">
+          <p class="reach__label">Mobil</p>
+          <p class="reach__value"><a href="tel:06607280306">0660 728 03 06</a></p>
+        </div>
+        <div class="reach__block">
+          <p class="reach__label">E-Mail</p>
+          <p class="reach__value"><a href="mailto:info@teppichwerkstatt.ch">info@teppichwerkstatt.ch</a></p>
+        </div>
+        <div class="reach__block">
+          <p class="reach__label">Erreichbarkeit</p>
+          <p class="reach__value">Mo – Fr 10 – 18 Uhr<br>Sa nach Vereinbarung</p>
+        </div>
+      </div>
+
+      <form class="form rv" id="abholung" style="--d:.1s"
+            method="post"
+            data-mailto="info@teppichwerkstatt.ch">
+        <div class="form__pair">
+          <p class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Vor- und Nachname">
+          </p>
+          <p class="field">
+            <label for="f-tel">Telefon</label>
+            <input id="f-tel" name="tel" type="tel" autocomplete="tel" placeholder="+41 …">
+          </p>
+        </div>
+
+        <div class="form__pair">
+          <p class="field">
+            <label for="f-mail">E-Mail</label>
+            <input id="f-mail" name="mail" type="email" autocomplete="email" required placeholder="name@beispiel.ch">
+          </p>
+          <p class="field">
+            <label for="f-adr">Abholadresse</label>
+            <input id="f-adr" name="adresse" type="text" autocomplete="street-address" placeholder="Strasse, PLZ Ort">
+          </p>
+        </div>
+
+        <div class="form__pair">
+          <p class="field">
+            <label for="f-lei">Leistung</label>
+            <select id="f-lei" name="leistung">
+              <option>Wäsche</option>
+              <option>Signature-Wäsche</option>
+              <option>Reparatur oder Restauration</option>
+              <option>Polstermöbel</option>
+              <option>Teppichboden vor Ort</option>
+              <option>Beratung bei mir zu Hause</option>
+            </select>
+          </p>
+          <p class="field">
+            <label for="f-mas">Masse und Anzahl</label>
+            <input id="f-mas" name="masse" type="text" placeholder="z. B. 2 Stück, ca. 200 × 300 cm">
+          </p>
+        </div>
+
+        <p class="field">
+          <label for="f-txt">Worum geht es?</label>
+          <textarea id="f-txt" name="text" rows="4" placeholder="Alter, Material, Schäden, Wunschtermin …"></textarea>
+        </p>
+
+        <p class="form__fine">
+          Mit dem Absenden stimmen Sie der Bearbeitung Ihrer Angaben zu. Details in der
+          <a href="datenschutz.html">Datenschutzerklärung</a>.
+        </p>
+
+        <p><button class="btn btn--flame" type="submit">
+          Anfrage senden
+          <svg class="btn__arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+            <path d="M9 1l4 4-4 4M13 5H0" stroke="currentColor" stroke-width="1.3"/>
+          </svg>
+        </button></p>
+
+        <p class="form__fine form__state" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========================================================== Fusszeile == -->
+<footer class="foot" data-theme="dark">
+  <div class="shell">
+    <div class="foot__top">
+      <div>
+        <span class="mark foot__mark" aria-hidden="true"></span>
+        <p class="foot__claim">Seit Generationen in besten Händen.</p>
+        <p class="foot__owner">Inhaber Massimo Strauss</p>
+      </div>
+
+      <div>
+        <p class="foot__h">Werkstatt</p>
+        <div class="foot__list">
+          <a href="#leistungen">Leistungen</a>
+          <a href="#ablauf">Ablauf</a>
+          <a href="#arbeiten">Arbeiten</a>
+          <a href="#preise">Preise</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="foot__h">Kontakt</p>
+        <div class="foot__list">
+          <span>Dufourstrasse 49, 8008 Zürich</span>
+          <a href="tel:0732220320">0732 220 320</a>
+          <a href="tel:06607280306">0660 728 03 06</a>
+          <a href="mailto:info@teppichwerkstatt.ch">info@teppichwerkstatt.ch</a>
+          <span>Mo – Fr 10 – 18 Uhr</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot__bar">
+      <span>© <span id="jahr">2026</span> Teppichwerkstatt Eckstein</span>
+      <span>
+        <a href="impressum.html">Impressum</a> ·
+        <a href="datenschutz.html">Datenschutz</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Teppichwerkstatt Eckstein",
+  "description": "Manufaktur für Teppichpflege: Handwäsche, Reparatur, Restauration und Abholservice in Zürich.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Dufourstrasse 49",
+    "postalCode": "8008",
+    "addressLocality": "Zürich",
+    "addressCountry": "CH"
+  },
+  "telephone": "0732 220 320",
+  "email": "info@teppichwerkstatt.ch",
+  "openingHours": "Mo-Fr 10:00-18:00",
+  "priceRange": "$$$",
+  "url": "https://www.teppichwerkstatt.ch",
+  "founder": { "@type": "Person", "name": "Massimo Strauss" },
+  "slogan": "Seit Generationen in besten Händen",
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Teppichwäsche" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Teppichreparatur" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Teppichrestauration" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "An- und Verkauf" } }
+  ]
+}
+</script>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('jahr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
