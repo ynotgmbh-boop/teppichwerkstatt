@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teppichwerkstatt Eckstein Zürich — Handwäsche, Reparatur, Restauration</title>
+<meta name="description" content="Teppichwerkstatt Eckstein an der Dufourstrasse 49 in Zürich: Teppichwäsche, Reparatur, Restauration, An- und Verkauf. Kostenlose Beratung und Hausbesuche nach Vereinbarung.">
+<meta name="theme-color" content="#0A0A09">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_CH">
+<meta property="og:site_name" content="Teppichwerkstatt Eckstein">
+<meta property="og:title" content="Teppichwerkstatt Eckstein — Handwäsche, Restauration, Abholservice">
+<meta property="og:description" content="Tradition, Handwerk, Werterhalt — seit Generationen in besten Händen. Dufourstrasse 49, 8008 Zürich.">
+<meta property="og:image" content="assets/img/hero-poster.jpg">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<noscript><style>
+  /* Ohne JavaScript wird die Bühne gestapelt statt überblendet,
+     und alles, was auf das Enthüllen wartet, ist sofort sichtbar. */
+  .stage { height: auto; }
+  .stage__pin { position: relative; height: auto; display: grid; grid-template-rows: 100svh auto; }
+  .stage__film { grid-row: 1; grid-column: 1; }
+  .hero { grid-row: 1; grid-column: 1; align-content: end; }
+  .stage__veil { display: none; }
+  .rv, .rv-wipe { opacity: 1; translate: none; clip-path: none; }
+  .rv-line > * { translate: none; }
+  .hero__svc li { opacity: 1; translate: none; }
+  .flow__spine i { transform: scaleY(1); }
+  .spool, .burger { display: none; }
+</style></noscript>
+</head>
+
+<body>
+<a class="skip" href="#handwerk">Zum Inhalt springen</a>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ====================================================== Kopfzeile ==== -->
+<header class="head">
+  <a class="head__brand" href="#start" aria-label="Teppichwerkstatt Eckstein, zum Seitenanfang">
+    <span class="mark head__mark" aria-hidden="true"></span>
+    <span class="head__word">Teppichwerkstatt<span>Eckstein</span></span>
+  </a>
+
+  <nav class="nav" aria-label="Abschnitte">
+    <a class="nav__link" data-anchor href="#handwerk">Handwerk</a>
+    <a class="nav__link" data-anchor href="#leistungen">Leistungen</a>
+    <a class="nav__link" data-anchor href="#ablauf">Ablauf</a>
+    <a class="nav__link" data-anchor href="#arbeiten">Arbeiten</a>
+    <a class="nav__link" data-anchor href="#preise">Preise</a>
+    <a class="nav__link" data-anchor href="#gebiet">Gebiet</a>
+    <a class="nav__link" data-anchor href="#atelier">Atelier</a>
+  </nav>
+
+  <div class="head__cta">
+    <a class="btn" href="#kontakt">Abholung anfragen</a>
+  </div>
+
+  <button class="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menü öffnen">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ====================================================== Überblendmenü == -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <nav aria-label="Menü">
+    <a class="drawer__link" href="#handwerk"><i>01</i>Handwerk</a>
+    <a class="drawer__link" href="#leistungen"><i>02</i>Leistungen</a>
+    <a class="drawer__link" href="#ablauf"><i>03</i>Ablauf</a>
+    <a class="drawer__link" href="#arbeiten"><i>04</i>Arbeiten</a>
+    <a class="drawer__link" href="#preise"><i>05</i>Preise</a>
+    <a class="drawer__link" href="#gebiet"><i>06</i>Gebiet</a>
+    <a class="drawer__link" href="#atelier"><i>07</i>Atelier</a>
+    <a class="drawer__link" href="#kontakt"><i>08</i>Kontakt</a>
+  </nav>
+  <div class="drawer__foot">
+    <a href="tel:0732220320">0732 220 320</a>
+    <a href="tel:06607280306">0660 728 03 06</a>
+    <a href="mailto:info@teppichwerkstatt.ch">info@teppichwerkstatt.ch</a>
+  </div>
+</div>
+
+<!-- ====================================================== Fortschritt ==== -->
+<div class="spool" aria-hidden="true">
+  <span class="mark spool__mark"></span>
+  <span class="spool__bar"><i></i></span>
+  <span class="spool__num">00</span>
+</div>
+
+<main>
+
+<!-- ============================================================ Bühne ==== -->
+<!-- Der Film weicht einer Elfenbeintafel: das Dunkle hebt sich ab,
+     darunter kommt die Farbe zum Vorschein. -->
+<div class="stage" id="start" data-theme="dark">
+  <div class="stage__pin">
+
+    <div class="stage__film">
+      <img class="stage__poster" src="assets/img/hero-poster.jpg" alt="">
+      <!-- Kein Autoplay: das Bild wird vom Scrollweg durchgespult (siehe stageJob). -->
+      <video id="herofilm" poster="assets/img/hero-poster.jpg" muted playsinline preload="auto">
+        <source src="assets/video/hero.mp4" type="video/mp4">
+      </video>
+      <script>
+        /* Auf schmalen Sichten und im Datensparmodus die leichte Fassung laden.
+           Steht direkt hinter dem Element, damit der Wechsel früh greift. */
+        (function () {
+          var v = document.getElementById('herofilm');
+          if (!v) return;
+          var slim = window.matchMedia('(max-width: 760px)').matches ||
+                     (navigator.connection && navigator.connection.saveData);
+          if (!slim) return;
+          v.querySelector('source').src = 'assets/video/hero-sm.mp4';
+          v.load();
+        })();
+      </script>
+      <div class="stage__scrim"></div>
+    </div>
+
+    <div class="stage__veil" aria-hidden="true">
+      <span class="veil__cloud veil__cloud--1"></span>
+      <span class="veil__cloud veil__cloud--2"></span>
+      <span class="veil__cloud veil__cloud--3"></span>
+      <span class="veil__solid"></span>
+    </div>
+
+    <div class="hero">
+      <div class="hero__main">
+        <p class="hero__kicker">Tradition · Handwerk · Werterhalt</p>
+        <h1 class="hero__title">
+          <span class="ln"><span>Die Zeit,</span></span>
+          <span class="ln"><span>die ein Teppich</span></span>
+          <span class="ln"><span><em>verdient</em>.</span></span>
+        </h1>
+        <div class="hero__foot">
+          <a class="btn btn--flame" href="#kontakt">
+            Abholung anfragen
+            <svg class="btn__arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+              <path d="M9 1l4 4-4 4M13 5H0" stroke="currentColor" stroke-width="1.3"/>
+            </svg>
+          </a>
+          <p class="hero__meta">
+            <span><b>Handwäsche</b> ohne Chemie</span>
+            <span><b>10–14</b> Tage</span>
+            <span><b>Abholung</b> in Zürich</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="hero__aside">
+        <!-- Treten beim Scrollen nacheinander hervor, gesteuert in stageJob -->
+        <ul class="hero__svc" data-svc>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.8 12.4h10.4v3.1a2.5 2.5 0 0 1-2.5 2.5H9.3a2.5 2.5 0 0 1-2.5-2.5v-3.1Z"/><path d="M9.1 12.4V9a1.8 1.8 0 0 1 1.8-1.8h2.2A1.8 1.8 0 0 1 14.9 9v3.4"/><path d="M2.6 21c1.8-1.3 3.6-1.3 5.4 0s3.6 1.3 5.4 0 3.6-1.3 5.4 0"/><path d="M19.6 3.2s-1.8 2.2-1.8 3.3a1.8 1.8 0 0 0 3.6 0c0-1.1-1.8-3.3-1.8-3.3Z"/></svg><div><b>Teppichwäsche</b><span>Reine Handwäsche, pflanzliche Seife</span></div></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 3.2 12.4 11.6"/><path d="M18.3 2.9a2.3 2.3 0 0 1 2.6 2.6"/><path d="M12.4 11.6c-2.7 1.3-4.6 2.9-5 5"/><circle cx="6.5" cy="19" r="1.7"/></svg><div><b>Teppichreparatur</b><span>Fransen, Kanten, Risse, Brandlöcher</span></div></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 3.4v17.2M19.4 3.4v17.2"/><path d="M4.6 7.6h14.8M4.6 12h14.8M4.6 16.4h14.8"/><circle cx="9.4" cy="12" r="1.3"/><circle cx="14.4" cy="7.6" r="1.3"/></svg><div><b>Teppichrestauration</b><span>Fehlstellen neu geknüpft, Knoten für Knoten</span></div></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.6 2.9H20a1.1 1.1 0 0 1 1.1 1.1v8.4a1.6 1.6 0 0 1-.47 1.13l-7.4 7.4a1.6 1.6 0 0 1-2.26 0l-7.5-7.5a1.6 1.6 0 0 1 0-2.26l7.4-7.4A1.6 1.6 0 0 1 11.6 2.9Z"/><circle cx="16.6" cy="7.4" r="1.5"/></svg><div><b>An- und Verkauf</b><span>Ankauf, Schätzung, ausgesuchte Stücke</span></div></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 14.2a1.9 1.9 0 0 1-1.9 1.9H8.2L4.4 19.9a.6.6 0 0 1-1-.45V5.7a1.9 1.9 0 0 1 1.9-1.9h13.4a1.9 1.9 0 0 1 1.9 1.9Z"/><path d="M8 8.6h8M8 12h5.4"/></svg><div><b>Kostenlose Beratung</b><span>Im Atelier oder bei Ihnen, ohne Wegzeit</span></div></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 10.2 12 3.4l8.4 6.8"/><path d="M5.6 11.8v8.8h12.8v-8.8"/><circle cx="12" cy="16.4" r="2.4"/><path d="M12 16.4a1.1 1.1 0 1 1 1.1-1.1"/></svg><div><b>Hausbesuche</b><span>Nach Vereinbarung, inklusive Abholung</span></div></li>
+        </ul>
+      </div>
+
+      <p class="hero__scroll"><i></i>Scrollen</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ========================================================= Handwerk ==== -->
+<section class="bay bay--light" id="handwerk" data-theme="light">
+  <div class="shell">
+
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Das Handwerk</p>
+        <h2 class="bay__title rv" style="--d:.08s">Seit Generationen in <em>besten Händen</em>.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Ein handgeknüpfter Teppich ist über Monate entstanden. Er verträgt keine
+        Maschine, die ihn in vierzig Minuten durchspült. Bei uns liegt er flach,
+        wird von Hand gewaschen und bekommt so lange Zeit, wie er braucht.
+      </p>
+    </div>
+
+    <div class="duo">
+      <div>
+        <p class="rv" style="max-width:52ch">
+          Wir folgen der persischen Werkstatttradition: erst der Staub, dann das
+          Wasser, dann die Faser. Gewaschen wird mit pflanzlichen, biologisch
+          abbaubaren Seifen — kein Chlor, keine Lösungsmittel, keine Bleiche.
+          Anschliessend führen wir der Wolle mit Lanolin das Fett zurück, das ihr
+          die Wäsche entzogen hat. Das ist der Schritt, den fast alle auslassen,
+          und der darüber entscheidet, wie der Teppich in zehn Jahren aussieht.
+        </p>
+
+        <ul class="creed rv" style="--d:.1s">
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.8 12.4h10.4v3.1a2.5 2.5 0 0 1-2.5 2.5H9.3a2.5 2.5 0 0 1-2.5-2.5v-3.1Z"/><path d="M9.1 12.4V9a1.8 1.8 0 0 1 1.8-1.8h2.2A1.8 1.8 0 0 1 14.9 9v3.4"/><path d="M2.6 21c1.8-1.3 3.6-1.3 5.4 0s3.6 1.3 5.4 0 3.6-1.3 5.4 0"/><path d="M19.6 3.2s-1.8 2.2-1.8 3.3a1.8 1.8 0 0 0 3.6 0c0-1.1-1.8-3.3-1.8-3.3Z"/></svg>Reine Handwäsche, flach liegend</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 3.4v17.2M19.4 3.4v17.2"/><path d="M4.6 7.6h14.8M4.6 12h14.8M4.6 16.4h14.8"/><circle cx="9.4" cy="12" r="1.3"/><circle cx="14.4" cy="7.6" r="1.3"/></svg>Traditionelle persische Technik</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 3.6c0 9.2-5.6 13.8-11.1 13.8-2 0-3.5-.6-3.5-.6S4.6 8.2 12.8 5.2c3.7-1.3 7.6-1.6 7.6-1.6Z"/><path d="M16.8 7.2 5.2 20.4"/></svg>Pflanzliche, biologisch abbaubare Seifen</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4s-5.3 6.1-5.3 9.7a5.3 5.3 0 0 0 10.6 0C17.3 9.5 12 3.4 12 3.4Z"/><path d="M4.4 20.6 20 4.4"/></svg>Kein Chlor, keine Lösungsmittel</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4s-5.3 6.1-5.3 9.7a5.3 5.3 0 0 0 10.6 0C17.3 9.5 12 3.4 12 3.4Z"/><path d="M9.5 14.2a2.7 2.7 0 0 0 2.7 2.7"/></svg>Rückfettung mit Woll-Lanolin</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 3.2 12.4 11.6"/><path d="M18.3 2.9a2.3 2.3 0 0 1 2.6 2.6"/><path d="M12.4 11.6c-2.7 1.3-4.6 2.9-5 5"/><circle cx="6.5" cy="19" r="1.7"/></svg>Reparatur Knoten für Knoten, von Hand</li>
+        </ul>
+
+        <div class="facts rv" style="--d:.18s">
+          <div><b>10–14</b><span>Tage bis zur Rückgabe</span></div>
+          <div><b>100 %</b><span>Handwäsche</span></div>
+          <div><b>0 %</b><span>Chlor und Bleiche</span></div>
+        </div>
+      </div>
+
+      <figure class="rv-wipe" style="margin:0; overflow:hidden">
+        <img data-par="0.16" src="assets/img/teppich-nachher.jpg"
+             alt="Nahaufnahme eines handgeknüpften Teppichs nach der Wäsche: Flor und Bordüre in klaren Farben."
+             width="1500" height="1000" loading="lazy" decoding="async">
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================================== Laufband ==== -->
+<div class="ticker" data-theme="dark" aria-hidden="true">
+  <!-- Zwei identische Sätze: die Schleife springt beim Wechsel unsichtbar zurück. -->
+  <div class="ticker__row">
+    <span>Handwäsche</span><span>Restauration</span><span>Rückfettung</span>
+    <span>Mottenschutz</span><span>Fransenservice</span><span>Abholung</span>
+    <span>Zustandsprotokoll</span><span>Klimaraum</span><span>Knotendichte</span>
+    <span>Woll-Lanolin</span><span>Kantensicherung</span><span>Leihteppich</span>
+    <span>Handwäsche</span><span>Restauration</span><span>Rückfettung</span>
+    <span>Mottenschutz</span><span>Fransenservice</span><span>Abholung</span>
+    <span>Zustandsprotokoll</span><span>Klimaraum</span><span>Knotendichte</span>
+    <span>Woll-Lanolin</span><span>Kantensicherung</span><span>Leihteppich</span>
+  </div>
+</div>
+
+<!-- ======================================================= Leistungen ==== -->
+<section class="bay bay--dark" id="leistungen" data-theme="dark">
+  <div class="shell">
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Leistungen</p>
+        <h2 class="bay__title rv" style="--d:.08s">Sechs Arbeiten, <em>eine</em> Werkstatt.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Alles läuft unter einem Dach — vom Zustandsprotokoll bis zum Ausrollen
+        bei Ihnen zu Hause. Ihr Teppich wird nicht weitergereicht.
+      </p>
+    </div>
+
+    <div class="craft">
+      <article class="craft__item">
+        <svg class="ico craft__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.8 12.4h10.4v3.1a2.5 2.5 0 0 1-2.5 2.5H9.3a2.5 2.5 0 0 1-2.5-2.5v-3.1Z"/><path d="M9.1 12.4V9a1.8 1.8 0 0 1 1.8-1.8h2.2A1.8 1.8 0 0 1 14.9 9v3.4"/><path d="M2.6 21c1.8-1.3 3.6-1.3 5.4 0s3.6 1.3 5.4 0 3.6-1.3 5.4 0"/><path d="M19.6 3.2s-1.8 2.2-1.8 3.3a1.8 1.8 0 0 0 3.6 0c0-1.1-1.8-3.3-1.8-3.3Z"/></svg>
+        <h3 class="craft__name">Teppichwäsche</h3>
+        <p class="craft__text">
+          Klopfen bis kein Sand mehr fällt, danach die Handwäsche mit pflanzlicher Seife. Trocknung hängend im Klimaraum, nicht an der Sonne.
+        </p>
+        <p class="craft__tags"><span>Handwäsche</span><span>Mottenschutz</span><span>Spannen</span></p>
+      </article>
+
+      <article class="craft__item">
+        <svg class="ico craft__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 3.2 12.4 11.6"/><path d="M18.3 2.9a2.3 2.3 0 0 1 2.6 2.6"/><path d="M12.4 11.6c-2.7 1.3-4.6 2.9-5 5"/><circle cx="6.5" cy="19" r="1.7"/></svg>
+        <h3 class="craft__name">Teppichreparatur</h3>
+        <p class="craft__text">
+          Fransen und Kanten erneuern wir, bevor der Flor Schaden nimmt. Risse, Brandlöcher und Wasserschäden ebenso — von Hand, nicht geklebt.
+        </p>
+        <p class="craft__tags"><span>Fransen</span><span>Kanten</span><span>Brandlöcher</span></p>
+      </article>
+
+      <article class="craft__item">
+        <svg class="ico craft__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 11.2V8.4a2.2 2.2 0 0 1 2.2-2.2h7.6A2.2 2.2 0 0 1 18 8.4v2.8"/><path d="M4.2 11.4a1.9 1.9 0 0 1 1.9 1.9v2.3h11.8v-2.3a1.9 1.9 0 1 1 3.8 0v4.4H2.3v-4.4a1.9 1.9 0 0 1 1.9-1.9Z"/><path d="M4.8 17.8v2M19.2 17.8v2"/></svg>
+        <h3 class="craft__name">Teppichrestauration</h3>
+        <p class="craft__text">
+          Fehlstellen knüpfen wir nach — abgestimmt auf Farbe, Material, Florhöhe und Knotendichte des Originals. Auch für Sammlerstücke.
+        </p>
+        <p class="craft__tags"><span>Neuknüpfung</span><span>Farbabgleich</span><span>Gutachten</span></p>
+      </article>
+
+      <article class="craft__item">
+        <svg class="ico craft__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.6 2.9H20a1.1 1.1 0 0 1 1.1 1.1v8.4a1.6 1.6 0 0 1-.47 1.13l-7.4 7.4a1.6 1.6 0 0 1-2.26 0l-7.5-7.5a1.6 1.6 0 0 1 0-2.26l7.4-7.4A1.6 1.6 0 0 1 11.6 2.9Z"/><circle cx="16.6" cy="7.4" r="1.5"/></svg>
+        <h3 class="craft__name">An- und Verkauf</h3>
+        <p class="craft__text">
+          Wir kaufen antike und moderne Stücke an, bereiten sie auf und geben sie weiter. Eine Schätzung erhalten Sie unverbindlich.
+        </p>
+        <p class="craft__tags"><span>Ankauf</span><span>Schätzung</span><span>Kommission</span></p>
+      </article>
+
+      <article class="craft__item">
+        <svg class="ico craft__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 14.2a1.9 1.9 0 0 1-1.9 1.9H8.2L4.4 19.9a.6.6 0 0 1-1-.45V5.7a1.9 1.9 0 0 1 1.9-1.9h13.4a1.9 1.9 0 0 1 1.9 1.9Z"/><path d="M8 8.6h8M8 12h5.4"/></svg>
+        <h3 class="craft__name">Kostenlose Beratung</h3>
+        <p class="craft__text">
+          Im Atelier oder bei Ihnen zu Hause. Wegzeiten berechnen wir nicht — auch dann nicht, wenn daraus kein Auftrag wird.
+        </p>
+        <p class="craft__tags"><span>Ohne Wegzeit</span><span>Unverbindlich</span><span>Vor Ort</span></p>
+      </article>
+
+      <article class="craft__item">
+        <svg class="ico craft__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.6 16.4V8.4a1 1 0 0 1 1-1h8.8v9"/><path d="M12.4 10.6h3.5l3.5 3.4v2.4"/><path d="M2.6 16.4h1.4M9 16.4h4.2M19.4 16.4h2"/><circle cx="6.5" cy="17.8" r="1.9"/><circle cx="16.4" cy="17.8" r="1.9"/></svg>
+        <h3 class="craft__name">Hausbesuche & Abholung</h3>
+        <p class="craft__text">
+          Nach Vereinbarung kommen wir zu Ihnen, rollen ein, protokollieren und bringen den Teppich zurück an seinen Platz. In Zürich ohne Aufpreis.
+        </p>
+        <p class="craft__tags"><span>Nach Termin</span><span>Kostenlos</span><span>Leihteppich</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================== Ablauf ==== -->
+<section class="bay bay--light" id="ablauf" data-theme="light">
+  <div class="shell">
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Ablauf</p>
+        <h2 class="bay__title rv" style="--d:.08s">Acht Schritte, <em>keine</em> Abkürzung.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Jeder Teppich durchläuft dieselbe Reihenfolge. Was sich unterscheidet,
+        ist die Zeit, die einzelne Schritte brauchen.
+      </p>
+    </div>
+
+    <div class="flow">
+      <div class="flow__spine" aria-hidden="true"><i></i></div>
+
+      <div class="flow__step">
+        <p class="flow__no">01</p>
+        <h3 class="flow__name">Anfrage</h3>
+        <p class="flow__text">Anruf, Formular oder Besuch im Atelier. Wir klären Material, Grösse und was Sie stört.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">02</p>
+        <h3 class="flow__name">Abholung</h3>
+        <p class="flow__text">Wir kommen zum vereinbarten Termin, rollen ein und nehmen den Teppich mit.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">03</p>
+        <h3 class="flow__name">Zustandsprotokoll</h3>
+        <p class="flow__text">Material, Knotendichte, Farbechtheit, Schäden. Alles fotografiert, bevor Wasser fliesst.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">04</p>
+        <h3 class="flow__name">Staubentzug</h3>
+        <p class="flow__text">Geklopft wird so lange, bis nichts mehr herausfällt. Trockener Schmutz muss raus, bevor er nass wird.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">05</p>
+        <h3 class="flow__name">Handwäsche</h3>
+        <p class="flow__text">Flach liegend, mit Bürste und pflanzlicher Seife. In der Signature-Wäsche in drei Durchgängen.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">06</p>
+        <h3 class="flow__name">Rückfettung</h3>
+        <p class="flow__text">Woll-Lanolin ersetzt das ausgewaschene Fett und legt sich als natürlicher Schutz um die Faser.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">07</p>
+        <h3 class="flow__name">Trocknung &amp; Reparatur</h3>
+        <p class="flow__text">Trocknen im Klimaraum, dann Spannen. Falls nötig, knüpfen wir Fehlstellen von Hand nach.</p>
+      </div>
+      <div class="flow__step">
+        <p class="flow__no">08</p>
+        <h3 class="flow__name">Zustellung</h3>
+        <p class="flow__text">Zurück an seinen Platz, ausgerollt und ausgerichtet. Das Protokoll bekommen Sie dazu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= Arbeiten ==== -->
+<section class="bay bay--dark" id="arbeiten" data-theme="dark">
+  <div class="shell">
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Arbeiten</p>
+        <h2 class="bay__title rv" style="--d:.08s">Vorher, <em>nachher</em>.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Laufstrasse, Vergrauung, drei Fehlstellen bis auf die Grundkette.
+        Erst gewaschen, dann Knoten für Knoten neu geknüpft.
+      </p>
+    </div>
+
+    <div class="rv-wipe">
+      <div class="ba" data-ba>
+        <img class="ba__after" src="assets/img/teppich-nachher.jpg"
+             alt="Derselbe Teppich nach Wäsche und Restauration: gleichmässiger Flor, geschlossene Fläche."
+             width="1500" height="1000" loading="lazy" decoding="async">
+        <div class="ba__before">
+          <img src="assets/img/teppich-vorher.jpg"
+               alt="Teppich vor der Bearbeitung: vergraute Laufstrasse und offene Fehlstellen."
+               width="1500" height="1000" loading="lazy" decoding="async">
+        </div>
+
+        <span class="ba__tag ba__tag--a">Vorher</span>
+        <span class="ba__tag ba__tag--b">Nachher</span>
+
+        <div class="ba__bar" aria-hidden="true">
+          <span class="ba__grip">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l-6 7 6 7v-4h6v4l6-7-6-7v4H9z"/></svg>
+          </span>
+        </div>
+
+        <input class="ba__range" type="range" min="0" max="100" value="50" step="0.1"
+               aria-label="Vergleich zwischen vorher und nachher verschieben">
+      </div>
+    </div>
+    <p class="ba-note rv">Ziehen Sie den Regler — oder nutzen Sie die Pfeiltasten</p>
+  </div>
+</section>
+
+<!-- =========================================================== Preise ==== -->
+<section class="bay bay--light" id="preise" data-theme="light">
+  <div class="shell">
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Preise</p>
+        <h2 class="bay__title rv" style="--d:.08s">Was es kostet, es <em>richtig</em> zu machen.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Abholung, Protokoll und Zustellung sind immer enthalten. Den verbindlichen
+        Preis nennen wir nach der Begutachtung — vorher wird nichts berechnet.
+      </p>
+    </div>
+
+    <div class="tariff">
+      <article class="tariff__card rv">
+        <h3 class="tariff__name">Wäsche</h3>
+        <p class="tariff__price">ab CHF 120<small>pro m²</small></p>
+        <ul class="tariff__list">
+          <li>Zustandsprotokoll mit Fotos</li>
+          <li>Klopfen und Staubentzug</li>
+          <li>Handwäsche, pflanzliche Seife</li>
+          <li>Mottenschutz</li>
+          <li>Trocknung im Klimaraum, Spannen</li>
+          <li>Abholung und Zustellung</li>
+        </ul>
+        <a class="btn btn--ink" href="#kontakt">Anfragen</a>
+      </article>
+
+      <article class="tariff__card tariff__card--lead rv" style="--d:.08s">
+        <span class="tariff__flag">Empfohlen</span>
+        <h3 class="tariff__name">Signature</h3>
+        <p class="tariff__price">ab CHF 165<small>pro m²</small></p>
+        <ul class="tariff__list">
+          <li>Alles aus der Wäsche</li>
+          <li>Dreistufige Wäsche</li>
+          <li>Händische Rückfettung mit Woll-Lanolin</li>
+          <li>Fransenservice</li>
+          <li>Kantensicherung</li>
+          <li>Leihteppich auf Wunsch</li>
+        </ul>
+        <a class="btn" href="#kontakt">Anfragen</a>
+      </article>
+
+      <article class="tariff__card rv" style="--d:.16s">
+        <h3 class="tariff__name">Restauration</h3>
+        <p class="tariff__price">Nach Aufwand<small>Offerte nach Begutachtung</small></p>
+        <ul class="tariff__list">
+          <li>Neuknüpfung von Fehlstellen</li>
+          <li>Wiederaufbau der Grundkette</li>
+          <li>Kanten, Fransen, Risse, Brandlöcher</li>
+          <li>Farbabgleich nach Original</li>
+          <li>Gutachten für die Versicherung</li>
+          <li>Sammlerstücke und Antikteppiche</li>
+        </ul>
+        <a class="btn btn--ink" href="#kontakt">Begutachtung</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================================================== Einsatzgebiet ==== -->
+<section class="bay bay--dark" id="gebiet" data-theme="dark">
+  <div class="shell">
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Einsatzgebiet</p>
+        <h2 class="bay__title rv" style="--d:.08s">Wo wir <em>abholen</em>.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Wir fahren selbst. Kein Kurier, keine Spedition — Ihr Teppich wechselt
+        zwischen Ihrem Zuhause und der Werkstatt kein einziges Mal die Hände.
+      </p>
+    </div>
+
+    <div class="geo">
+      <figure class="geo__map rv-wipe">
+        <svg class="ch" viewBox="0 0 1270 783" width="1270" height="783" role="img" aria-labelledby="ch-t ch-d" preserveAspectRatio="xMidYMid meet">
+<title id="ch-t">Einsatzgebiet der Teppichwerkstatt in der Schweiz</title>
+<desc id="ch-d">Stilisierte Schweizer Karte. Von Zürich aus laufen Ringe nach aussen und markieren Kernzone, erweiterte Zone und die übrige Schweiz.</desc>
+<path class="ch__fill" d="M928.0 147.1 L936.8 205.7 L902.2 286.6 L1004.6 346.8 L1120.0 355.8 L1102.1 491.3 L1002.4 547.0 L835.0 505.6 L786.0 638.9 L678.2 649.4 L639.0 597.0 L512.2 709.1 L403.1 724.8 L305.7 654.0 L228.0 509.1 L120.0 560.9 L123.3 411.2 L288.8 225.5 L281.5 141.5 L384.6 171.9 L446.7 115.5 L639.2 117.8 L685.6 46.0 Z"/>
+<g class="ch__dots">
+<g class="w" data-r="0.000">
+<circle class='hot' cx="672" cy="184" r="2.6"/>
+<circle class='hot' cx="695" cy="184" r="2.6"/>
+<circle class='hot' cx="684" cy="207" r="2.6"/>
+<circle class='hot' cx="706" cy="207" r="2.6"/>
+</g>
+<g class="w" data-r="0.040">
+<circle class='hot' cx="660" cy="161" r="2.6"/>
+<circle class='hot' cx="684" cy="161" r="2.6"/>
+<circle class='hot' cx="706" cy="161" r="2.6"/>
+<circle class='hot' cx="649" cy="184" r="2.6"/>
+<circle class='hot' cx="718" cy="184" r="2.6"/>
+<circle class='hot' cx="660" cy="207" r="2.6"/>
+<circle class='hot' cx="730" cy="207" r="2.6"/>
+<circle class='hot' cx="672" cy="230" r="2.6"/>
+<circle class='hot' cx="695" cy="230" r="2.6"/>
+<circle class='hot' cx="718" cy="230" r="2.6"/>
+</g>
+<g class="w" data-r="0.080">
+<circle class='hot' cx="649" cy="138" r="2.6"/>
+<circle class='hot' cx="672" cy="138" r="2.6"/>
+<circle class='hot' cx="695" cy="138" r="2.6"/>
+<circle class='hot' cx="718" cy="138" r="2.6"/>
+<circle class='hot' cx="638" cy="161" r="2.6"/>
+<circle class='hot' cx="730" cy="161" r="2.6"/>
+<circle class='hot' cx="752" cy="161" r="2.6"/>
+<circle class='hot' cx="626" cy="184" r="2.6"/>
+<circle class='hot' cx="741" cy="184" r="2.6"/>
+<circle class='hot' cx="638" cy="207" r="2.6"/>
+<circle class='hot' cx="752" cy="207" r="2.6"/>
+<circle class='hot' cx="626" cy="230" r="2.6"/>
+<circle class='hot' cx="649" cy="230" r="2.6"/>
+<circle class='hot' cx="741" cy="230" r="2.6"/>
+<circle class='hot' cx="660" cy="253" r="2.6"/>
+<circle class='hot' cx="684" cy="253" r="2.6"/>
+<circle class='hot' cx="706" cy="253" r="2.6"/>
+<circle class='hot' cx="730" cy="253" r="2.6"/>
+</g>
+<g class="w" data-r="0.120">
+<circle class='hot' cx="660" cy="115" r="2.6"/>
+<circle class='hot' cx="684" cy="115" r="2.6"/>
+<circle class='hot' cx="706" cy="115" r="2.6"/>
+<circle class='hot' cx="730" cy="115" r="2.6"/>
+<circle class='hot' cx="626" cy="138" r="2.6"/>
+<circle class='hot' cx="741" cy="138" r="2.6"/>
+<circle class='hot' cx="764" cy="138" r="2.6"/>
+<circle class='hot' cx="614" cy="161" r="2.6"/>
+<circle class='hot' cx="776" cy="161" r="2.6"/>
+<circle class='hot' cx="603" cy="184" r="2.6"/>
+<circle class='hot' cx="764" cy="184" r="2.6"/>
+<circle cx="787" cy="184" r="2.6"/>
+<circle cx="592" cy="207" r="2.6"/>
+<circle class='hot' cx="614" cy="207" r="2.6"/>
+<circle class='hot' cx="776" cy="207" r="2.6"/>
+<circle class='hot' cx="603" cy="230" r="2.6"/>
+<circle class='hot' cx="764" cy="230" r="2.6"/>
+<circle class='hot' cx="614" cy="253" r="2.6"/>
+<circle class='hot' cx="638" cy="253" r="2.6"/>
+<circle class='hot' cx="752" cy="253" r="2.6"/>
+<circle class='hot' cx="649" cy="276" r="2.6"/>
+<circle class='hot' cx="672" cy="276" r="2.6"/>
+<circle class='hot' cx="695" cy="276" r="2.6"/>
+<circle class='hot' cx="718" cy="276" r="2.6"/>
+<circle class='hot' cx="741" cy="276" r="2.6"/>
+</g>
+<g class="w" data-r="0.160">
+<circle cx="672" cy="92" r="2.6"/>
+<circle cx="695" cy="92" r="2.6"/>
+<circle cx="718" cy="92" r="2.6"/>
+<circle cx="741" cy="92" r="2.6"/>
+<circle cx="752" cy="115" r="2.6"/>
+<circle cx="776" cy="115" r="2.6"/>
+<circle cx="580" cy="138" r="2.6"/>
+<circle cx="603" cy="138" r="2.6"/>
+<circle cx="787" cy="138" r="2.6"/>
+<circle cx="592" cy="161" r="2.6"/>
+<circle cx="798" cy="161" r="2.6"/>
+<circle cx="580" cy="184" r="2.6"/>
+<circle cx="810" cy="184" r="2.6"/>
+<circle cx="568" cy="207" r="2.6"/>
+<circle cx="798" cy="207" r="2.6"/>
+<circle cx="580" cy="230" r="2.6"/>
+<circle cx="787" cy="230" r="2.6"/>
+<circle cx="810" cy="230" r="2.6"/>
+<circle cx="592" cy="253" r="2.6"/>
+<circle cx="776" cy="253" r="2.6"/>
+<circle cx="798" cy="253" r="2.6"/>
+<circle cx="603" cy="276" r="2.6"/>
+<circle cx="626" cy="276" r="2.6"/>
+<circle cx="764" cy="276" r="2.6"/>
+<circle cx="638" cy="299" r="2.6"/>
+<circle cx="660" cy="299" r="2.6"/>
+<circle cx="684" cy="299" r="2.6"/>
+<circle cx="706" cy="299" r="2.6"/>
+<circle cx="730" cy="299" r="2.6"/>
+<circle cx="752" cy="299" r="2.6"/>
+</g>
+<g class="w" data-r="0.200">
+<circle cx="684" cy="69" r="2.6"/>
+<circle cx="706" cy="69" r="2.6"/>
+<circle cx="730" cy="69" r="2.6"/>
+<circle cx="764" cy="92" r="2.6"/>
+<circle cx="787" cy="92" r="2.6"/>
+<circle cx="798" cy="115" r="2.6"/>
+<circle cx="557" cy="138" r="2.6"/>
+<circle cx="810" cy="138" r="2.6"/>
+<circle cx="546" cy="161" r="2.6"/>
+<circle cx="568" cy="161" r="2.6"/>
+<circle cx="822" cy="161" r="2.6"/>
+<circle cx="557" cy="184" r="2.6"/>
+<circle cx="833" cy="184" r="2.6"/>
+<circle cx="546" cy="207" r="2.6"/>
+<circle cx="822" cy="207" r="2.6"/>
+<circle cx="557" cy="230" r="2.6"/>
+<circle cx="833" cy="230" r="2.6"/>
+<circle cx="568" cy="253" r="2.6"/>
+<circle cx="822" cy="253" r="2.6"/>
+<circle cx="580" cy="276" r="2.6"/>
+<circle cx="787" cy="276" r="2.6"/>
+<circle cx="810" cy="276" r="2.6"/>
+<circle cx="592" cy="299" r="2.6"/>
+<circle cx="614" cy="299" r="2.6"/>
+<circle cx="776" cy="299" r="2.6"/>
+<circle cx="798" cy="299" r="2.6"/>
+<circle cx="626" cy="322" r="2.6"/>
+<circle cx="649" cy="322" r="2.6"/>
+<circle cx="672" cy="322" r="2.6"/>
+<circle cx="695" cy="322" r="2.6"/>
+<circle cx="718" cy="322" r="2.6"/>
+<circle cx="741" cy="322" r="2.6"/>
+<circle cx="764" cy="322" r="2.6"/>
+<circle cx="684" cy="345" r="2.6"/>
+<circle cx="706" cy="345" r="2.6"/>
+</g>
+<g class="w" data-r="0.240">
+<circle cx="822" cy="115" r="2.6"/>
+<circle cx="844" cy="115" r="2.6"/>
+<circle cx="534" cy="138" r="2.6"/>
+<circle cx="833" cy="138" r="2.6"/>
+<circle cx="522" cy="161" r="2.6"/>
+<circle cx="844" cy="161" r="2.6"/>
+<circle cx="534" cy="184" r="2.6"/>
+<circle cx="856" cy="184" r="2.6"/>
+<circle cx="522" cy="207" r="2.6"/>
+<circle cx="844" cy="207" r="2.6"/>
+<circle cx="534" cy="230" r="2.6"/>
+<circle cx="856" cy="230" r="2.6"/>
+<circle cx="546" cy="253" r="2.6"/>
+<circle cx="844" cy="253" r="2.6"/>
+<circle cx="557" cy="276" r="2.6"/>
+<circle cx="833" cy="276" r="2.6"/>
+<circle cx="568" cy="299" r="2.6"/>
+<circle cx="822" cy="299" r="2.6"/>
+<circle cx="580" cy="322" r="2.6"/>
+<circle cx="603" cy="322" r="2.6"/>
+<circle cx="787" cy="322" r="2.6"/>
+<circle cx="810" cy="322" r="2.6"/>
+<circle cx="614" cy="345" r="2.6"/>
+<circle cx="638" cy="345" r="2.6"/>
+<circle cx="660" cy="345" r="2.6"/>
+<circle cx="730" cy="345" r="2.6"/>
+<circle cx="752" cy="345" r="2.6"/>
+<circle cx="776" cy="345" r="2.6"/>
+<circle cx="672" cy="368" r="2.6"/>
+<circle cx="695" cy="368" r="2.6"/>
+<circle cx="718" cy="368" r="2.6"/>
+</g>
+<g class="w" data-r="0.280">
+<circle cx="511" cy="138" r="2.6"/>
+<circle cx="856" cy="138" r="2.6"/>
+<circle cx="879" cy="138" r="2.6"/>
+<circle cx="500" cy="161" r="2.6"/>
+<circle cx="868" cy="161" r="2.6"/>
+<circle cx="511" cy="184" r="2.6"/>
+<circle cx="879" cy="184" r="2.6"/>
+<circle cx="500" cy="207" r="2.6"/>
+<circle cx="868" cy="207" r="2.6"/>
+<circle cx="511" cy="230" r="2.6"/>
+<circle cx="879" cy="230" r="2.6"/>
+<circle cx="500" cy="253" r="2.6"/>
+<circle cx="522" cy="253" r="2.6"/>
+<circle cx="868" cy="253" r="2.6"/>
+<circle cx="511" cy="276" r="2.6"/>
+<circle cx="534" cy="276" r="2.6"/>
+<circle cx="856" cy="276" r="2.6"/>
+<circle cx="522" cy="299" r="2.6"/>
+<circle cx="546" cy="299" r="2.6"/>
+<circle cx="844" cy="299" r="2.6"/>
+<circle cx="557" cy="322" r="2.6"/>
+<circle cx="833" cy="322" r="2.6"/>
+<circle cx="568" cy="345" r="2.6"/>
+<circle cx="592" cy="345" r="2.6"/>
+<circle cx="798" cy="345" r="2.6"/>
+<circle cx="822" cy="345" r="2.6"/>
+<circle cx="603" cy="368" r="2.6"/>
+<circle cx="626" cy="368" r="2.6"/>
+<circle cx="649" cy="368" r="2.6"/>
+<circle cx="741" cy="368" r="2.6"/>
+<circle cx="764" cy="368" r="2.6"/>
+<circle cx="787" cy="368" r="2.6"/>
+<circle cx="660" cy="391" r="2.6"/>
+<circle cx="684" cy="391" r="2.6"/>
+<circle cx="706" cy="391" r="2.6"/>
+<circle cx="730" cy="391" r="2.6"/>
+</g>
+<g class="w" data-r="0.320">
+<circle cx="488" cy="138" r="2.6"/>
+<circle cx="902" cy="138" r="2.6"/>
+<circle cx="476" cy="161" r="2.6"/>
+<circle cx="890" cy="161" r="2.6"/>
+<circle cx="488" cy="184" r="2.6"/>
+<circle cx="902" cy="184" r="2.6"/>
+<circle cx="476" cy="207" r="2.6"/>
+<circle cx="890" cy="207" r="2.6"/>
+<circle cx="914" cy="207" r="2.6"/>
+<circle cx="488" cy="230" r="2.6"/>
+<circle cx="902" cy="230" r="2.6"/>
+<circle cx="476" cy="253" r="2.6"/>
+<circle cx="890" cy="253" r="2.6"/>
+<circle cx="488" cy="276" r="2.6"/>
+<circle cx="879" cy="276" r="2.6"/>
+<circle cx="500" cy="299" r="2.6"/>
+<circle cx="868" cy="299" r="2.6"/>
+<circle cx="511" cy="322" r="2.6"/>
+<circle cx="534" cy="322" r="2.6"/>
+<circle cx="856" cy="322" r="2.6"/>
+<circle cx="522" cy="345" r="2.6"/>
+<circle cx="546" cy="345" r="2.6"/>
+<circle cx="844" cy="345" r="2.6"/>
+<circle cx="557" cy="368" r="2.6"/>
+<circle cx="580" cy="368" r="2.6"/>
+<circle cx="810" cy="368" r="2.6"/>
+<circle cx="833" cy="368" r="2.6"/>
+<circle cx="592" cy="391" r="2.6"/>
+<circle cx="614" cy="391" r="2.6"/>
+<circle cx="638" cy="391" r="2.6"/>
+<circle cx="752" cy="391" r="2.6"/>
+<circle cx="776" cy="391" r="2.6"/>
+<circle cx="798" cy="391" r="2.6"/>
+<circle cx="649" cy="414" r="2.6"/>
+<circle cx="672" cy="414" r="2.6"/>
+<circle cx="695" cy="414" r="2.6"/>
+<circle cx="718" cy="414" r="2.6"/>
+<circle cx="741" cy="414" r="2.6"/>
+</g>
+<g class="w" data-r="0.360">
+<circle cx="465" cy="138" r="2.6"/>
+<circle cx="454" cy="161" r="2.6"/>
+<circle cx="914" cy="161" r="2.6"/>
+<circle cx="442" cy="184" r="2.6"/>
+<circle cx="465" cy="184" r="2.6"/>
+<circle cx="925" cy="184" r="2.6"/>
+<circle cx="454" cy="207" r="2.6"/>
+<circle cx="465" cy="230" r="2.6"/>
+<circle cx="925" cy="230" r="2.6"/>
+<circle cx="454" cy="253" r="2.6"/>
+<circle cx="914" cy="253" r="2.6"/>
+<circle cx="465" cy="276" r="2.6"/>
+<circle cx="902" cy="276" r="2.6"/>
+<circle cx="476" cy="299" r="2.6"/>
+<circle cx="890" cy="299" r="2.6"/>
+<circle cx="914" cy="299" r="2.6"/>
+<circle cx="488" cy="322" r="2.6"/>
+<circle cx="879" cy="322" r="2.6"/>
+<circle cx="902" cy="322" r="2.6"/>
+<circle cx="500" cy="345" r="2.6"/>
+<circle cx="868" cy="345" r="2.6"/>
+<circle cx="890" cy="345" r="2.6"/>
+<circle cx="511" cy="368" r="2.6"/>
+<circle cx="534" cy="368" r="2.6"/>
+<circle cx="856" cy="368" r="2.6"/>
+<circle cx="546" cy="391" r="2.6"/>
+<circle cx="568" cy="391" r="2.6"/>
+<circle cx="822" cy="391" r="2.6"/>
+<circle cx="844" cy="391" r="2.6"/>
+<circle cx="580" cy="414" r="2.6"/>
+<circle cx="603" cy="414" r="2.6"/>
+<circle cx="626" cy="414" r="2.6"/>
+<circle cx="764" cy="414" r="2.6"/>
+<circle cx="787" cy="414" r="2.6"/>
+<circle cx="810" cy="414" r="2.6"/>
+<circle cx="638" cy="437" r="2.6"/>
+<circle cx="660" cy="437" r="2.6"/>
+<circle cx="684" cy="437" r="2.6"/>
+<circle cx="706" cy="437" r="2.6"/>
+<circle cx="730" cy="437" r="2.6"/>
+<circle cx="752" cy="437" r="2.6"/>
+</g>
+<g class="w" data-r="0.400">
+<circle cx="442" cy="138" r="2.6"/>
+<circle cx="430" cy="161" r="2.6"/>
+<circle cx="419" cy="184" r="2.6"/>
+<circle cx="430" cy="207" r="2.6"/>
+<circle cx="419" cy="230" r="2.6"/>
+<circle cx="442" cy="230" r="2.6"/>
+<circle cx="430" cy="253" r="2.6"/>
+<circle cx="442" cy="276" r="2.6"/>
+<circle cx="454" cy="299" r="2.6"/>
+<circle cx="465" cy="322" r="2.6"/>
+<circle cx="925" cy="322" r="2.6"/>
+<circle cx="476" cy="345" r="2.6"/>
+<circle cx="914" cy="345" r="2.6"/>
+<circle cx="488" cy="368" r="2.6"/>
+<circle cx="879" cy="368" r="2.6"/>
+<circle cx="902" cy="368" r="2.6"/>
+<circle cx="500" cy="391" r="2.6"/>
+<circle cx="522" cy="391" r="2.6"/>
+<circle cx="868" cy="391" r="2.6"/>
+<circle cx="534" cy="414" r="2.6"/>
+<circle cx="557" cy="414" r="2.6"/>
+<circle cx="833" cy="414" r="2.6"/>
+<circle cx="856" cy="414" r="2.6"/>
+<circle cx="568" cy="437" r="2.6"/>
+<circle cx="592" cy="437" r="2.6"/>
+<circle cx="614" cy="437" r="2.6"/>
+<circle cx="776" cy="437" r="2.6"/>
+<circle cx="798" cy="437" r="2.6"/>
+<circle cx="822" cy="437" r="2.6"/>
+<circle cx="626" cy="460" r="2.6"/>
+<circle cx="649" cy="460" r="2.6"/>
+<circle cx="672" cy="460" r="2.6"/>
+<circle cx="695" cy="460" r="2.6"/>
+<circle cx="718" cy="460" r="2.6"/>
+<circle cx="741" cy="460" r="2.6"/>
+<circle cx="764" cy="460" r="2.6"/>
+</g>
+<g class="w" data-r="0.440">
+<circle cx="408" cy="161" r="2.6"/>
+<circle cx="396" cy="184" r="2.6"/>
+<circle cx="408" cy="207" r="2.6"/>
+<circle cx="396" cy="230" r="2.6"/>
+<circle cx="408" cy="253" r="2.6"/>
+<circle cx="419" cy="276" r="2.6"/>
+<circle cx="430" cy="299" r="2.6"/>
+<circle cx="419" cy="322" r="2.6"/>
+<circle cx="442" cy="322" r="2.6"/>
+<circle cx="948" cy="322" r="2.6"/>
+<circle cx="430" cy="345" r="2.6"/>
+<circle cx="454" cy="345" r="2.6"/>
+<circle cx="936" cy="345" r="2.6"/>
+<circle cx="465" cy="368" r="2.6"/>
+<circle cx="925" cy="368" r="2.6"/>
+<circle cx="476" cy="391" r="2.6"/>
+<circle cx="890" cy="391" r="2.6"/>
+<circle cx="914" cy="391" r="2.6"/>
+<circle cx="488" cy="414" r="2.6"/>
+<circle cx="511" cy="414" r="2.6"/>
+<circle cx="879" cy="414" r="2.6"/>
+<circle cx="522" cy="437" r="2.6"/>
+<circle cx="546" cy="437" r="2.6"/>
+<circle cx="844" cy="437" r="2.6"/>
+<circle cx="868" cy="437" r="2.6"/>
+<circle cx="557" cy="460" r="2.6"/>
+<circle cx="580" cy="460" r="2.6"/>
+<circle cx="603" cy="460" r="2.6"/>
+<circle cx="787" cy="460" r="2.6"/>
+<circle cx="810" cy="460" r="2.6"/>
+<circle cx="614" cy="483" r="2.6"/>
+<circle cx="638" cy="483" r="2.6"/>
+<circle cx="660" cy="483" r="2.6"/>
+<circle cx="684" cy="483" r="2.6"/>
+<circle cx="706" cy="483" r="2.6"/>
+<circle cx="730" cy="483" r="2.6"/>
+<circle cx="752" cy="483" r="2.6"/>
+<circle cx="776" cy="483" r="2.6"/>
+</g>
+<g class="w" data-r="0.480">
+<circle cx="373" cy="184" r="2.6"/>
+<circle cx="384" cy="207" r="2.6"/>
+<circle cx="373" cy="230" r="2.6"/>
+<circle cx="384" cy="253" r="2.6"/>
+<circle cx="396" cy="276" r="2.6"/>
+<circle cx="384" cy="299" r="2.6"/>
+<circle cx="408" cy="299" r="2.6"/>
+<circle cx="396" cy="322" r="2.6"/>
+<circle cx="408" cy="345" r="2.6"/>
+<circle cx="960" cy="345" r="2.6"/>
+<circle cx="419" cy="368" r="2.6"/>
+<circle cx="442" cy="368" r="2.6"/>
+<circle cx="948" cy="368" r="2.6"/>
+<circle cx="430" cy="391" r="2.6"/>
+<circle cx="454" cy="391" r="2.6"/>
+<circle cx="936" cy="391" r="2.6"/>
+<circle cx="465" cy="414" r="2.6"/>
+<circle cx="902" cy="414" r="2.6"/>
+<circle cx="925" cy="414" r="2.6"/>
+<circle cx="476" cy="437" r="2.6"/>
+<circle cx="500" cy="437" r="2.6"/>
+<circle cx="890" cy="437" r="2.6"/>
+<circle cx="511" cy="460" r="2.6"/>
+<circle cx="534" cy="460" r="2.6"/>
+<circle cx="833" cy="460" r="2.6"/>
+<circle cx="856" cy="460" r="2.6"/>
+<circle cx="879" cy="460" r="2.6"/>
+<circle cx="546" cy="483" r="2.6"/>
+<circle cx="568" cy="483" r="2.6"/>
+<circle cx="592" cy="483" r="2.6"/>
+<circle cx="798" cy="483" r="2.6"/>
+<circle cx="822" cy="483" r="2.6"/>
+<circle cx="603" cy="506" r="2.6"/>
+<circle cx="626" cy="506" r="2.6"/>
+<circle cx="649" cy="506" r="2.6"/>
+<circle cx="672" cy="506" r="2.6"/>
+<circle cx="695" cy="506" r="2.6"/>
+<circle cx="718" cy="506" r="2.6"/>
+<circle cx="741" cy="506" r="2.6"/>
+<circle cx="764" cy="506" r="2.6"/>
+<circle cx="787" cy="506" r="2.6"/>
+</g>
+<g class="w" data-r="0.520">
+<circle cx="350" cy="184" r="2.6"/>
+<circle cx="362" cy="207" r="2.6"/>
+<circle cx="350" cy="230" r="2.6"/>
+<circle cx="362" cy="253" r="2.6"/>
+<circle cx="350" cy="276" r="2.6"/>
+<circle cx="373" cy="276" r="2.6"/>
+<circle cx="362" cy="299" r="2.6"/>
+<circle cx="373" cy="322" r="2.6"/>
+<circle cx="384" cy="345" r="2.6"/>
+<circle cx="982" cy="345" r="2.6"/>
+<circle cx="396" cy="368" r="2.6"/>
+<circle cx="971" cy="368" r="2.6"/>
+<circle cx="994" cy="368" r="2.6"/>
+<circle cx="408" cy="391" r="2.6"/>
+<circle cx="960" cy="391" r="2.6"/>
+<circle cx="419" cy="414" r="2.6"/>
+<circle cx="442" cy="414" r="2.6"/>
+<circle cx="948" cy="414" r="2.6"/>
+<circle cx="454" cy="437" r="2.6"/>
+<circle cx="914" cy="437" r="2.6"/>
+<circle cx="936" cy="437" r="2.6"/>
+<circle cx="465" cy="460" r="2.6"/>
+<circle cx="488" cy="460" r="2.6"/>
+<circle cx="902" cy="460" r="2.6"/>
+<circle cx="500" cy="483" r="2.6"/>
+<circle cx="522" cy="483" r="2.6"/>
+<circle cx="844" cy="483" r="2.6"/>
+<circle cx="868" cy="483" r="2.6"/>
+<circle cx="534" cy="506" r="2.6"/>
+<circle cx="557" cy="506" r="2.6"/>
+<circle cx="580" cy="506" r="2.6"/>
+<circle cx="810" cy="506" r="2.6"/>
+<circle cx="833" cy="506" r="2.6"/>
+<circle cx="592" cy="529" r="2.6"/>
+<circle cx="614" cy="529" r="2.6"/>
+<circle cx="638" cy="529" r="2.6"/>
+<circle cx="660" cy="529" r="2.6"/>
+<circle cx="684" cy="529" r="2.6"/>
+<circle cx="706" cy="529" r="2.6"/>
+<circle cx="730" cy="529" r="2.6"/>
+<circle cx="752" cy="529" r="2.6"/>
+<circle cx="776" cy="529" r="2.6"/>
+</g>
+<g class="w" data-r="0.560">
+<circle cx="338" cy="161" r="2.6"/>
+<circle cx="327" cy="184" r="2.6"/>
+<circle cx="316" cy="207" r="2.6"/>
+<circle cx="338" cy="207" r="2.6"/>
+<circle cx="327" cy="230" r="2.6"/>
+<circle cx="338" cy="253" r="2.6"/>
+<circle cx="327" cy="276" r="2.6"/>
+<circle cx="338" cy="299" r="2.6"/>
+<circle cx="350" cy="322" r="2.6"/>
+<circle cx="362" cy="345" r="2.6"/>
+<circle cx="373" cy="368" r="2.6"/>
+<circle cx="1017" cy="368" r="2.6"/>
+<circle cx="384" cy="391" r="2.6"/>
+<circle cx="982" cy="391" r="2.6"/>
+<circle cx="1006" cy="391" r="2.6"/>
+<circle cx="396" cy="414" r="2.6"/>
+<circle cx="971" cy="414" r="2.6"/>
+<circle cx="994" cy="414" r="2.6"/>
+<circle cx="408" cy="437" r="2.6"/>
+<circle cx="430" cy="437" r="2.6"/>
+<circle cx="960" cy="437" r="2.6"/>
+<circle cx="442" cy="460" r="2.6"/>
+<circle cx="925" cy="460" r="2.6"/>
+<circle cx="948" cy="460" r="2.6"/>
+<circle cx="454" cy="483" r="2.6"/>
+<circle cx="476" cy="483" r="2.6"/>
+<circle cx="890" cy="483" r="2.6"/>
+<circle cx="914" cy="483" r="2.6"/>
+<circle cx="488" cy="506" r="2.6"/>
+<circle cx="511" cy="506" r="2.6"/>
+<circle cx="856" cy="506" r="2.6"/>
+<circle cx="879" cy="506" r="2.6"/>
+<circle cx="522" cy="529" r="2.6"/>
+<circle cx="546" cy="529" r="2.6"/>
+<circle cx="568" cy="529" r="2.6"/>
+<circle cx="798" cy="529" r="2.6"/>
+<circle cx="822" cy="529" r="2.6"/>
+<circle cx="580" cy="552" r="2.6"/>
+<circle cx="603" cy="552" r="2.6"/>
+<circle cx="626" cy="552" r="2.6"/>
+<circle cx="649" cy="552" r="2.6"/>
+<circle cx="672" cy="552" r="2.6"/>
+<circle cx="695" cy="552" r="2.6"/>
+<circle cx="718" cy="552" r="2.6"/>
+<circle cx="741" cy="552" r="2.6"/>
+<circle cx="764" cy="552" r="2.6"/>
+<circle cx="787" cy="552" r="2.6"/>
+</g>
+<g class="w" data-r="0.600">
+<circle cx="292" cy="161" r="2.6"/>
+<circle cx="316" cy="161" r="2.6"/>
+<circle cx="304" cy="184" r="2.6"/>
+<circle cx="292" cy="207" r="2.6"/>
+<circle cx="304" cy="230" r="2.6"/>
+<circle cx="316" cy="253" r="2.6"/>
+<circle cx="304" cy="276" r="2.6"/>
+<circle cx="316" cy="299" r="2.6"/>
+<circle cx="327" cy="322" r="2.6"/>
+<circle cx="338" cy="345" r="2.6"/>
+<circle cx="350" cy="368" r="2.6"/>
+<circle cx="1040" cy="368" r="2.6"/>
+<circle cx="362" cy="391" r="2.6"/>
+<circle cx="1028" cy="391" r="2.6"/>
+<circle cx="373" cy="414" r="2.6"/>
+<circle cx="1017" cy="414" r="2.6"/>
+<circle cx="384" cy="437" r="2.6"/>
+<circle cx="982" cy="437" r="2.6"/>
+<circle cx="1006" cy="437" r="2.6"/>
+<circle cx="396" cy="460" r="2.6"/>
+<circle cx="419" cy="460" r="2.6"/>
+<circle cx="971" cy="460" r="2.6"/>
+<circle cx="430" cy="483" r="2.6"/>
+<circle cx="936" cy="483" r="2.6"/>
+<circle cx="960" cy="483" r="2.6"/>
+<circle cx="442" cy="506" r="2.6"/>
+<circle cx="465" cy="506" r="2.6"/>
+<circle cx="902" cy="506" r="2.6"/>
+<circle cx="925" cy="506" r="2.6"/>
+<circle cx="476" cy="529" r="2.6"/>
+<circle cx="500" cy="529" r="2.6"/>
+<circle cx="511" cy="552" r="2.6"/>
+<circle cx="534" cy="552" r="2.6"/>
+<circle cx="557" cy="552" r="2.6"/>
+<circle cx="810" cy="552" r="2.6"/>
+<circle cx="568" cy="575" r="2.6"/>
+<circle cx="592" cy="575" r="2.6"/>
+<circle cx="614" cy="575" r="2.6"/>
+<circle cx="638" cy="575" r="2.6"/>
+<circle cx="660" cy="575" r="2.6"/>
+<circle cx="684" cy="575" r="2.6"/>
+<circle cx="706" cy="575" r="2.6"/>
+<circle cx="730" cy="575" r="2.6"/>
+<circle cx="752" cy="575" r="2.6"/>
+<circle cx="776" cy="575" r="2.6"/>
+<circle cx="798" cy="575" r="2.6"/>
+</g>
+<g class="w" data-r="0.640">
+<circle cx="270" cy="253" r="2.6"/>
+<circle cx="292" cy="253" r="2.6"/>
+<circle cx="281" cy="276" r="2.6"/>
+<circle cx="292" cy="299" r="2.6"/>
+<circle cx="304" cy="322" r="2.6"/>
+<circle cx="292" cy="345" r="2.6"/>
+<circle cx="316" cy="345" r="2.6"/>
+<circle cx="304" cy="368" r="2.6"/>
+<circle cx="327" cy="368" r="2.6"/>
+<circle cx="1063" cy="368" r="2.6"/>
+<circle cx="316" cy="391" r="2.6"/>
+<circle cx="338" cy="391" r="2.6"/>
+<circle cx="1052" cy="391" r="2.6"/>
+<circle cx="327" cy="414" r="2.6"/>
+<circle cx="350" cy="414" r="2.6"/>
+<circle cx="1040" cy="414" r="2.6"/>
+<circle cx="362" cy="437" r="2.6"/>
+<circle cx="1028" cy="437" r="2.6"/>
+<circle cx="373" cy="460" r="2.6"/>
+<circle cx="994" cy="460" r="2.6"/>
+<circle cx="1017" cy="460" r="2.6"/>
+<circle cx="384" cy="483" r="2.6"/>
+<circle cx="408" cy="483" r="2.6"/>
+<circle cx="982" cy="483" r="2.6"/>
+<circle cx="419" cy="506" r="2.6"/>
+<circle cx="948" cy="506" r="2.6"/>
+<circle cx="971" cy="506" r="2.6"/>
+<circle cx="430" cy="529" r="2.6"/>
+<circle cx="454" cy="529" r="2.6"/>
+<circle cx="936" cy="529" r="2.6"/>
+<circle cx="465" cy="552" r="2.6"/>
+<circle cx="488" cy="552" r="2.6"/>
+<circle cx="500" cy="575" r="2.6"/>
+<circle cx="522" cy="575" r="2.6"/>
+<circle cx="546" cy="575" r="2.6"/>
+<circle cx="557" cy="598" r="2.6"/>
+<circle cx="580" cy="598" r="2.6"/>
+<circle cx="603" cy="598" r="2.6"/>
+<circle cx="626" cy="598" r="2.6"/>
+<circle cx="649" cy="598" r="2.6"/>
+<circle cx="672" cy="598" r="2.6"/>
+<circle cx="695" cy="598" r="2.6"/>
+<circle cx="718" cy="598" r="2.6"/>
+<circle cx="741" cy="598" r="2.6"/>
+<circle cx="764" cy="598" r="2.6"/>
+<circle cx="787" cy="598" r="2.6"/>
+<circle cx="684" cy="621" r="2.6"/>
+</g>
+<g class="w" data-r="0.680">
+<circle cx="258" cy="276" r="2.6"/>
+<circle cx="270" cy="299" r="2.6"/>
+<circle cx="258" cy="322" r="2.6"/>
+<circle cx="281" cy="322" r="2.6"/>
+<circle cx="270" cy="345" r="2.6"/>
+<circle cx="281" cy="368" r="2.6"/>
+<circle cx="1086" cy="368" r="2.6"/>
+<circle cx="292" cy="391" r="2.6"/>
+<circle cx="1074" cy="391" r="2.6"/>
+<circle cx="304" cy="414" r="2.6"/>
+<circle cx="1063" cy="414" r="2.6"/>
+<circle cx="316" cy="437" r="2.6"/>
+<circle cx="338" cy="437" r="2.6"/>
+<circle cx="1052" cy="437" r="2.6"/>
+<circle cx="327" cy="460" r="2.6"/>
+<circle cx="350" cy="460" r="2.6"/>
+<circle cx="1040" cy="460" r="2.6"/>
+<circle cx="362" cy="483" r="2.6"/>
+<circle cx="1006" cy="483" r="2.6"/>
+<circle cx="1028" cy="483" r="2.6"/>
+<circle cx="373" cy="506" r="2.6"/>
+<circle cx="396" cy="506" r="2.6"/>
+<circle cx="994" cy="506" r="2.6"/>
+<circle cx="408" cy="529" r="2.6"/>
+<circle cx="960" cy="529" r="2.6"/>
+<circle cx="982" cy="529" r="2.6"/>
+<circle cx="419" cy="552" r="2.6"/>
+<circle cx="442" cy="552" r="2.6"/>
+<circle cx="454" cy="575" r="2.6"/>
+<circle cx="476" cy="575" r="2.6"/>
+<circle cx="488" cy="598" r="2.6"/>
+<circle cx="511" cy="598" r="2.6"/>
+<circle cx="534" cy="598" r="2.6"/>
+<circle cx="546" cy="621" r="2.6"/>
+<circle cx="568" cy="621" r="2.6"/>
+<circle cx="592" cy="621" r="2.6"/>
+<circle cx="660" cy="621" r="2.6"/>
+<circle cx="706" cy="621" r="2.6"/>
+<circle cx="730" cy="621" r="2.6"/>
+<circle cx="752" cy="621" r="2.6"/>
+<circle cx="776" cy="621" r="2.6"/>
+<circle cx="695" cy="644" r="2.6"/>
+<circle cx="718" cy="644" r="2.6"/>
+</g>
+<g class="w" data-r="0.720">
+<circle cx="246" cy="299" r="2.6"/>
+<circle cx="235" cy="322" r="2.6"/>
+<circle cx="246" cy="345" r="2.6"/>
+<circle cx="258" cy="368" r="2.6"/>
+<circle cx="1109" cy="368" r="2.6"/>
+<circle cx="270" cy="391" r="2.6"/>
+<circle cx="1098" cy="391" r="2.6"/>
+<circle cx="281" cy="414" r="2.6"/>
+<circle cx="1086" cy="414" r="2.6"/>
+<circle cx="1109" cy="414" r="2.6"/>
+<circle cx="292" cy="437" r="2.6"/>
+<circle cx="1074" cy="437" r="2.6"/>
+<circle cx="1098" cy="437" r="2.6"/>
+<circle cx="304" cy="460" r="2.6"/>
+<circle cx="1063" cy="460" r="2.6"/>
+<circle cx="316" cy="483" r="2.6"/>
+<circle cx="338" cy="483" r="2.6"/>
+<circle cx="1052" cy="483" r="2.6"/>
+<circle cx="350" cy="506" r="2.6"/>
+<circle cx="1017" cy="506" r="2.6"/>
+<circle cx="1040" cy="506" r="2.6"/>
+<circle cx="362" cy="529" r="2.6"/>
+<circle cx="384" cy="529" r="2.6"/>
+<circle cx="1006" cy="529" r="2.6"/>
+<circle cx="1028" cy="529" r="2.6"/>
+<circle cx="396" cy="552" r="2.6"/>
+<circle cx="408" cy="575" r="2.6"/>
+<circle cx="430" cy="575" r="2.6"/>
+<circle cx="442" cy="598" r="2.6"/>
+<circle cx="465" cy="598" r="2.6"/>
+<circle cx="500" cy="621" r="2.6"/>
+<circle cx="522" cy="621" r="2.6"/>
+<circle cx="534" cy="644" r="2.6"/>
+<circle cx="557" cy="644" r="2.6"/>
+<circle cx="580" cy="644" r="2.6"/>
+</g>
+<g class="w" data-r="0.760">
+<circle cx="224" cy="299" r="2.6"/>
+<circle cx="212" cy="322" r="2.6"/>
+<circle cx="224" cy="345" r="2.6"/>
+<circle cx="235" cy="368" r="2.6"/>
+<circle cx="246" cy="391" r="2.6"/>
+<circle cx="258" cy="414" r="2.6"/>
+<circle cx="270" cy="437" r="2.6"/>
+<circle cx="281" cy="460" r="2.6"/>
+<circle cx="1086" cy="460" r="2.6"/>
+<circle cx="292" cy="483" r="2.6"/>
+<circle cx="1074" cy="483" r="2.6"/>
+<circle cx="1098" cy="483" r="2.6"/>
+<circle cx="304" cy="506" r="2.6"/>
+<circle cx="327" cy="506" r="2.6"/>
+<circle cx="1063" cy="506" r="2.6"/>
+<circle cx="338" cy="529" r="2.6"/>
+<circle cx="350" cy="552" r="2.6"/>
+<circle cx="373" cy="552" r="2.6"/>
+<circle cx="384" cy="575" r="2.6"/>
+<circle cx="396" cy="598" r="2.6"/>
+<circle cx="419" cy="598" r="2.6"/>
+<circle cx="430" cy="621" r="2.6"/>
+<circle cx="454" cy="621" r="2.6"/>
+<circle cx="476" cy="621" r="2.6"/>
+<circle cx="488" cy="644" r="2.6"/>
+<circle cx="511" cy="644" r="2.6"/>
+<circle cx="522" cy="667" r="2.6"/>
+<circle cx="546" cy="667" r="2.6"/>
+</g>
+<g class="w" data-r="0.800">
+<circle cx="200" cy="345" r="2.6"/>
+<circle cx="212" cy="368" r="2.6"/>
+<circle cx="224" cy="391" r="2.6"/>
+<circle cx="235" cy="414" r="2.6"/>
+<circle cx="224" cy="437" r="2.6"/>
+<circle cx="246" cy="437" r="2.6"/>
+<circle cx="258" cy="460" r="2.6"/>
+<circle cx="270" cy="483" r="2.6"/>
+<circle cx="281" cy="506" r="2.6"/>
+<circle cx="292" cy="529" r="2.6"/>
+<circle cx="316" cy="529" r="2.6"/>
+<circle cx="304" cy="552" r="2.6"/>
+<circle cx="327" cy="552" r="2.6"/>
+<circle cx="338" cy="575" r="2.6"/>
+<circle cx="362" cy="575" r="2.6"/>
+<circle cx="373" cy="598" r="2.6"/>
+<circle cx="384" cy="621" r="2.6"/>
+<circle cx="408" cy="621" r="2.6"/>
+<circle cx="419" cy="644" r="2.6"/>
+<circle cx="442" cy="644" r="2.6"/>
+<circle cx="465" cy="644" r="2.6"/>
+<circle cx="476" cy="667" r="2.6"/>
+<circle cx="500" cy="667" r="2.6"/>
+</g>
+<g class="w" data-r="0.840">
+<circle cx="189" cy="368" r="2.6"/>
+<circle cx="178" cy="391" r="2.6"/>
+<circle cx="200" cy="391" r="2.6"/>
+<circle cx="189" cy="414" r="2.6"/>
+<circle cx="212" cy="414" r="2.6"/>
+<circle cx="200" cy="437" r="2.6"/>
+<circle cx="212" cy="460" r="2.6"/>
+<circle cx="235" cy="460" r="2.6"/>
+<circle cx="224" cy="483" r="2.6"/>
+<circle cx="246" cy="483" r="2.6"/>
+<circle cx="258" cy="506" r="2.6"/>
+<circle cx="270" cy="529" r="2.6"/>
+<circle cx="281" cy="552" r="2.6"/>
+<circle cx="292" cy="575" r="2.6"/>
+<circle cx="316" cy="575" r="2.6"/>
+<circle cx="327" cy="598" r="2.6"/>
+<circle cx="350" cy="598" r="2.6"/>
+<circle cx="362" cy="621" r="2.6"/>
+<circle cx="373" cy="644" r="2.6"/>
+<circle cx="396" cy="644" r="2.6"/>
+<circle cx="408" cy="667" r="2.6"/>
+<circle cx="430" cy="667" r="2.6"/>
+<circle cx="454" cy="667" r="2.6"/>
+<circle cx="465" cy="690" r="2.6"/>
+<circle cx="488" cy="690" r="2.6"/>
+<circle cx="511" cy="690" r="2.6"/>
+</g>
+<g class="w" data-r="0.880">
+<circle cx="166" cy="368" r="2.6"/>
+<circle cx="154" cy="391" r="2.6"/>
+<circle cx="166" cy="414" r="2.6"/>
+<circle cx="178" cy="437" r="2.6"/>
+<circle cx="189" cy="460" r="2.6"/>
+<circle cx="200" cy="483" r="2.6"/>
+<circle cx="212" cy="506" r="2.6"/>
+<circle cx="235" cy="506" r="2.6"/>
+<circle cx="246" cy="529" r="2.6"/>
+<circle cx="258" cy="552" r="2.6"/>
+<circle cx="270" cy="575" r="2.6"/>
+<circle cx="281" cy="598" r="2.6"/>
+<circle cx="304" cy="598" r="2.6"/>
+<circle cx="316" cy="621" r="2.6"/>
+<circle cx="338" cy="621" r="2.6"/>
+<circle cx="350" cy="644" r="2.6"/>
+<circle cx="362" cy="667" r="2.6"/>
+<circle cx="384" cy="667" r="2.6"/>
+<circle cx="396" cy="690" r="2.6"/>
+<circle cx="419" cy="690" r="2.6"/>
+<circle cx="442" cy="690" r="2.6"/>
+<circle cx="454" cy="713" r="2.6"/>
+<circle cx="476" cy="713" r="2.6"/>
+</g>
+<g class="w" data-r="0.920">
+<circle cx="143" cy="414" r="2.6"/>
+<circle cx="154" cy="437" r="2.6"/>
+<circle cx="166" cy="460" r="2.6"/>
+<circle cx="178" cy="483" r="2.6"/>
+<circle cx="189" cy="506" r="2.6"/>
+<circle cx="292" cy="621" r="2.6"/>
+<circle cx="304" cy="644" r="2.6"/>
+<circle cx="327" cy="644" r="2.6"/>
+<circle cx="338" cy="667" r="2.6"/>
+<circle cx="373" cy="690" r="2.6"/>
+<circle cx="408" cy="713" r="2.6"/>
+<circle cx="430" cy="713" r="2.6"/>
+</g>
+<g class="w" data-r="0.960">
+<circle cx="132" cy="437" r="2.6"/>
+<circle cx="143" cy="460" r="2.6"/>
+<circle cx="154" cy="483" r="2.6"/>
+<circle cx="166" cy="506" r="2.6"/>
+<circle cx="178" cy="529" r="2.6"/>
+</g>
+<g class="w" data-r="1.000">
+<circle cx="132" cy="483" r="2.6"/>
+<circle cx="143" cy="506" r="2.6"/>
+<circle cx="132" cy="529" r="2.6"/>
+<circle cx="154" cy="529" r="2.6"/>
+</g>
+</g>
+<g class="ch__rings">
+<circle class="ch__zone" cx="689.9" cy="196.0" r="95.1"/>
+<circle class="ch__zone ch__zone--wide" cx="689.9" cy="196.0" r="252.6"/>
+<g class="ch__sonar" data-cx="689.9" data-cy="196.0" data-rmax="650">
+<circle cx="689.9" cy="196.0" r="0"/>
+<circle cx="689.9" cy="196.0" r="0"/>
+<circle cx="689.9" cy="196.0" r="0"/>
+</g>
+</g>
+<path class="ch__edge" d="M928.0 147.1 L936.8 205.7 L902.2 286.6 L1004.6 346.8 L1120.0 355.8 L1102.1 491.3 L1002.4 547.0 L835.0 505.6 L786.0 638.9 L678.2 649.4 L639.0 597.0 L512.2 709.1 L403.1 724.8 L305.7 654.0 L228.0 509.1 L120.0 560.9 L123.3 411.2 L288.8 225.5 L281.5 141.5 L384.6 171.9 L446.7 115.5 L639.2 117.8 L685.6 46.0 Z"/>
+<g class="ch__cities">
+<g class="ch__city ch__city--kern">
+<circle class="ch__hub" cx="689.9" cy="196.0" r="7"/>
+<circle class="ch__hubdot" cx="689.9" cy="196.0" r="3.2"/>
+<text x="706.9" y="216.0" text-anchor="start">Zürich</text>
+</g>
+<g class="ch__city ch__city--kern">
+<circle class="ch__pin" cx="734.5" cy="155.3" r="3.4"/>
+<text x="748.5" y="142.3" text-anchor="start">Winterthur</text>
+</g>
+<g class="ch__city ch__city--kern">
+<circle class="ch__pin" cx="636.6" cy="164.1" r="3.4"/>
+<text x="622.6" y="151.1" text-anchor="end">Baden</text>
+</g>
+<g class="ch__city ch__city--kern">
+<circle class="ch__pin" cx="684.0" cy="265.7" r="3.4"/>
+<text x="670.0" y="285.7" text-anchor="end">Zug</text>
+</g>
+<g class="ch__city ch__city--kern">
+<circle class="ch__pin" cx="752.4" cy="245.9" r="3.4"/>
+<text x="766.4" y="250.9" text-anchor="start">Rapperswil</text>
+</g>
+<g class="ch__city ch__city--weit">
+<circle class="ch__pin" cx="709.9" cy="90.6" r="3.4"/>
+<text x="723.9" y="77.6" text-anchor="start">Schaffhausen</text>
+</g>
+<g class="ch__city ch__city--weit">
+<circle class="ch__pin" cx="878.8" cy="180.3" r="3.4"/>
+<text x="892.8" y="185.3" text-anchor="start">St. Gallen</text>
+</g>
+<g class="ch__city ch__city--weit">
+<circle class="ch__pin" cx="637.3" cy="304.0" r="3.4"/>
+<text x="623.3" y="309.0" text-anchor="end">Luzern</text>
+</g>
+<g class="ch__city ch__city--weit">
+<circle class="ch__pin" cx="474.3" cy="135.6" r="3.4"/>
+<text x="460.3" y="140.6" text-anchor="end">Basel</text>
+</g>
+<g class="ch__city ch__city--weit">
+<circle class="ch__pin" cx="442.3" cy="337.8" r="3.4"/>
+<text x="428.3" y="357.8" text-anchor="end">Bern</text>
+</g>
+<g class="ch__city ch__city--anfrage">
+<circle class="ch__pin" cx="914.0" cy="369.9" r="3.4"/>
+<text x="928.0" y="374.9" text-anchor="start">Chur</text>
+</g>
+<g class="ch__city ch__city--anfrage">
+<circle class="ch__pin" cx="257.9" cy="479.3" r="3.4"/>
+<text x="243.9" y="484.3" text-anchor="end">Lausanne</text>
+</g>
+<g class="ch__city ch__city--anfrage">
+<circle class="ch__pin" cx="147.3" cy="583.5" r="3.4"/>
+<text x="133.3" y="603.5" text-anchor="end">Genf</text>
+</g>
+<g class="ch__city ch__city--anfrage">
+<circle class="ch__pin" cx="782.5" cy="649.9" r="3.4"/>
+<text x="796.5" y="654.9" text-anchor="start">Lugano</text>
+</g>
+</g>
+</svg>
+        <figcaption class="geo__cap">
+          Ausgangspunkt ist die Werkstatt im Zürcher Seefeld.
+        </figcaption>
+      </figure>
+
+      <div class="geo__zones">
+        <article class="zone rv">
+          <p class="zone__key"><i class="zone__dot zone__dot--kern"></i>Kernzone</p>
+          <h3 class="zone__name">Zürich und Umgebung</h3>
+          <p class="zone__places">Zürich · Winterthur · Baden · Zug · Rapperswil</p>
+          <p class="zone__note">
+            Abholung und Zustellung kostenlos, in der Regel innert 48 Stunden.
+            Auf Wunsch bringen wir einen Leihteppich mit.
+          </p>
+        </article>
+
+        <article class="zone rv" style="--d:.09s">
+          <p class="zone__key"><i class="zone__dot zone__dot--weit"></i>Erweitert · bis 85 km</p>
+          <h3 class="zone__name">Nordwest- und Ostschweiz</h3>
+          <p class="zone__places">Basel · Bern · Luzern · St. Gallen · Schaffhausen</p>
+          <p class="zone__note">
+            Kostenlos ab zwei Teppichen oder acht Quadratmetern. Darunter
+            berechnen wir eine Fahrpauschale von CHF 120.
+          </p>
+        </article>
+
+        <article class="zone rv" style="--d:.18s">
+          <p class="zone__key"><i class="zone__dot zone__dot--fern"></i>Übrige Schweiz</p>
+          <h3 class="zone__name">Auf Anfrage</h3>
+          <p class="zone__places">Genf · Lausanne · Chur · Lugano · Tessin</p>
+          <p class="zone__note">
+            Wir bündeln Fahrten und melden uns mit dem nächsten Sammeltermin.
+            Für Sammlerstücke kommen wir auch einzeln.
+          </p>
+        </article>
+
+        <p class="rv" style="--d:.26s; margin-top:2rem">
+          <a class="tlink" href="#kontakt">Abholung anfragen
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+              <path d="M9 1l4 4-4 4M13 5H0" stroke="currentColor" stroke-width="1.3"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== Atelier ==== -->
+<section class="bay bay--light" id="atelier" data-theme="light">
+  <div class="shell">
+    <div class="duo duo--flip">
+      <figure class="rv-wipe" style="margin:0; overflow:hidden">
+        <img data-par="0.14" src="assets/img/teppich-vorher.jpg"
+             alt="Teppich im Zustand vor der Bearbeitung, mit sichtbarer Abnutzung."
+             width="1500" height="1000" loading="lazy" decoding="async">
+      </figure>
+
+      <div>
+        <p class="eyebrow rv">Atelier</p>
+        <h2 class="bay__title rv" style="--d:.08s">An der Dufourstrasse, <em>hinter</em> der Werkstatttür.</h2>
+        <p class="lede rv" style="--d:.16s; margin-top:1.6rem">
+          Wir sind eine kleine Werkstatt und bleiben es. Wer den Teppich abholt,
+          wäscht ihn auch. Wer ihn wäscht, knüpft ihn auch.
+        </p>
+        <p class="rv" style="--d:.22s; margin-top:1.6rem; max-width:52ch; color:var(--mute-light)">
+          Kommen Sie vorbei — mit oder ohne Teppich. Wir zeigen Ihnen den
+          Waschtisch, die Knüpfrahmen und den Klimaraum, und Sie sehen, was mit
+          Ihrem Stück passieren würde. Eine Beratung kostet nichts.
+        </p>
+
+        <div class="facts rv" style="--d:.28s">
+          <div><b>Mo–Fr</b><span>10 – 18 Uhr</span></div>
+          <div><b>Sa</b><span>Nach Vereinbarung</span></div>
+          <div><b>8008</b><span>Zürich Seefeld</span></div>
+        </div>
+
+        <p style="margin-top:2.4rem" class="rv">
+          <a class="tlink" href="#kontakt">Termin vereinbaren
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+              <path d="M9 1l4 4-4 4M13 5H0" stroke="currentColor" stroke-width="1.3"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== Kontakt ==== -->
+<section class="bay bay--deep" id="kontakt" data-theme="dark">
+  <div class="shell">
+    <div class="bay__head">
+      <div>
+        <p class="eyebrow rv">Kontakt</p>
+        <h2 class="bay__title rv" style="--d:.08s">Wir holen ihn <em>ab</em>.</h2>
+      </div>
+      <p class="lede rv" style="--d:.16s">
+        Sagen Sie uns, worum es geht. Wir melden uns innerhalb eines Werktags mit
+        einem Vorschlag für den Abholtermin.
+      </p>
+    </div>
+
+    <div class="reach">
+      <div class="rv">
+        <div class="reach__block">
+          <p class="reach__label">Atelier</p>
+          <p class="reach__value">Dufourstrasse 49<br>8008 Zürich</p>
+        </div>
+        <div class="reach__block">
+          <p class="reach__label">Telefon</p>
+          <p class="reach__value"><a href="tel:0732220320">0732 220 320</a></p>
+        </div>
+        <div class="reach__block">
+          <p class="reach__label">Mobil</p>
+          <p class="reach__value"><a href="tel:06607280306">0660 728 03 06</a></p>
+        </div>
+        <div class="reach__block">
+          <p class="reach__label">E-Mail</p>
+          <p class="reach__value"><a href="mailto:info@teppichwerkstatt.ch">info@teppichwerkstatt.ch</a></p>
+        </div>
+        <div class="reach__block">
+          <p class="reach__label">Öffnungszeiten</p>
+          <p class="reach__value">Mo – Fr 10 – 18 Uhr<br>Sa nach Vereinbarung</p>
+        </div>
+      </div>
+
+      <form class="form rv" id="abholung" style="--d:.1s"
+            method="post"
+            data-mailto="info@teppichwerkstatt.ch">
+        <div class="form__pair">
+          <p class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Vor- und Nachname">
+          </p>
+          <p class="field">
+            <label for="f-tel">Telefon</label>
+            <input id="f-tel" name="tel" type="tel" autocomplete="tel" placeholder="+41 …">
+          </p>
+        </div>
+
+        <div class="form__pair">
+          <p class="field">
+            <label for="f-mail">E-Mail</label>
+            <input id="f-mail" name="mail" type="email" autocomplete="email" required placeholder="name@beispiel.ch">
+          </p>
+          <p class="field">
+            <label for="f-adr">Abholadresse</label>
+            <input id="f-adr" name="adresse" type="text" autocomplete="street-address" placeholder="Strasse, PLZ Ort">
+          </p>
+        </div>
+
+        <div class="form__pair">
+          <p class="field">
+            <label for="f-lei">Leistung</label>
+            <select id="f-lei" name="leistung">
+              <option>Wäsche</option>
+              <option>Signature-Wäsche</option>
+              <option>Reparatur oder Restauration</option>
+              <option>Polstermöbel</option>
+              <option>Teppichboden vor Ort</option>
+              <option>Beratung im Atelier</option>
+            </select>
+          </p>
+          <p class="field">
+            <label for="f-mas">Masse und Anzahl</label>
+            <input id="f-mas" name="masse" type="text" placeholder="z. B. 2 Stück, ca. 200 × 300 cm">
+          </p>
+        </div>
+
+        <p class="field">
+          <label for="f-txt">Worum geht es?</label>
+          <textarea id="f-txt" name="text" rows="4" placeholder="Alter, Material, Schäden, Wunschtermin …"></textarea>
+        </p>
+
+        <p class="form__fine">
+          Mit dem Absenden stimmen Sie der Bearbeitung Ihrer Angaben zu. Details in der
+          <a href="datenschutz.html">Datenschutzerklärung</a>.
+        </p>
+
+        <p><button class="btn btn--flame" type="submit">
+          Anfrage senden
+          <svg class="btn__arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+            <path d="M9 1l4 4-4 4M13 5H0" stroke="currentColor" stroke-width="1.3"/>
+          </svg>
+        </button></p>
+
+        <p class="form__fine form__state" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========================================================== Fusszeile == -->
+<footer class="foot" data-theme="dark">
+  <div class="shell">
+    <div class="foot__top">
+      <div>
+        <span class="mark foot__mark" aria-hidden="true"></span>
+        <p class="foot__claim">Seit Generationen in besten Händen.</p>
+        <p class="foot__owner">Inhaber Massimo Strauss</p>
+      </div>
+
+      <div>
+        <p class="foot__h">Werkstatt</p>
+        <div class="foot__list">
+          <a href="#leistungen">Leistungen</a>
+          <a href="#ablauf">Ablauf</a>
+          <a href="#arbeiten">Arbeiten</a>
+          <a href="#preise">Preise</a>
+          <a href="#atelier">Atelier</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="foot__h">Kontakt</p>
+        <div class="foot__list">
+          <span>Dufourstrasse 49, 8008 Zürich</span>
+          <a href="tel:0732220320">0732 220 320</a>
+          <a href="tel:06607280306">0660 728 03 06</a>
+          <a href="mailto:info@teppichwerkstatt.ch">info@teppichwerkstatt.ch</a>
+          <span>Mo – Fr 10 – 18 Uhr</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot__bar">
+      <span>© <span id="jahr">2026</span> Teppichwerkstatt Eckstein</span>
+      <span>
+        <a href="impressum.html">Impressum</a> ·
+        <a href="datenschutz.html">Datenschutz</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Teppichwerkstatt Eckstein",
+  "description": "Manufaktur für Teppichpflege: Handwäsche, Reparatur, Restauration und Abholservice in Zürich.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Dufourstrasse 49",
+    "postalCode": "8008",
+    "addressLocality": "Zürich",
+    "addressCountry": "CH"
+  },
+  "telephone": "0732 220 320",
+  "email": "info@teppichwerkstatt.ch",
+  "openingHours": "Mo-Fr 10:00-18:00",
+  "priceRange": "$$$",
+  "url": "https://www.teppichwerkstatt.ch",
+  "founder": { "@type": "Person", "name": "Massimo Strauss" },
+  "slogan": "Seit Generationen in besten Händen",
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Teppichwäsche" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Teppichreparatur" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Teppichrestauration" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "An- und Verkauf" } }
+  ]
+}
+</script>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('jahr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
